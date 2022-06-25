@@ -1,25 +1,27 @@
-import logo from './logo.svg';
+import { ReactComponent as Logo } from './logo.svg';
+import Portfolio from './components/Portfolio.js';
 import './App.css';
+import { useEffect, useState } from 'react';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const [FirstLoad, setFirstLoad] = useState(true);
+
+    const computedClassName = FirstLoad ? 'App bg-dark' : 'App bg-light';
+
+    useEffect(() => {
+        setTimeout(() => {
+            setFirstLoad(false);          
+        }, 4000);
+    }, []);  
+
+    return (
+        <div className={computedClassName}>
+            <div className='logo-container'>
+                {FirstLoad ? <div><div className='letter'>A</div><Logo /></div> : <Portfolio />}
+            </div>
+        </div>
+    );
 }
 
 export default App;
