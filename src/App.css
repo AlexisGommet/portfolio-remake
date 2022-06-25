@@ -3,6 +3,7 @@
 :root{
     --bg-loading: #020c1b;
     --bg-portfolio: #0A192F;
+    --green: #64FFDA;
 }
 
 .bg-dark{
@@ -23,11 +24,15 @@
 }
 
 .logo-container{
-    margin: 0;
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-67%, -57%);
+    transform: translate(-50%, -50%);
+    transform-origin: left top;
+    animation: shrink 0.3s 2s linear forwards;
 }
 
 .letter {
@@ -36,16 +41,18 @@
     top: 50%;
     left: 50%;
     opacity: 0;  
-    animation: fadeIn 2s cubic-bezier(.58,-0.17,.39,1.08) alternate 2;
-    color: #64FFDA;
+    animation: fadeIn 2s 0s cubic-bezier(.58,-0.17,.39,1.08) forwards;
+    color: var(--green);
+    transform: translate(-50%, -50%);
     font-size: 550%;
-    transform: translate(47%, -38%);  
 }
 
 .path {
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
-    animation: dash 2s cubic-bezier(.6,0,.13,.36) alternate 2;
+    overflow: visible;
+    transform: translate(9%, 17%);   
+    animation: dash 2s 0s cubic-bezier(.6,0,.13,.36) forwards;
 }
   
 @keyframes dash {
@@ -59,13 +66,29 @@
 
 @keyframes fadeIn {
     from {
-      opacity: 0;
+        opacity: 0;
     }
     to {
-      opacity: 1;
+        opacity: 1;
     }
-  }
+}
+
+@keyframes shrink {
+    from {
+        transform: scale(1) translate(-50%, -50%);
+        opacity: 1;
+    }
+    to {
+        transform: scale(0) translate(-50%, -50%);
+        opacity: 0;
+    }
+}
 
 .Portoflio-bg{
-    position: fixed;
+    color: var(--green);
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

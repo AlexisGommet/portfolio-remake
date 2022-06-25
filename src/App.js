@@ -12,14 +12,20 @@ function App() {
     useEffect(() => {
         setTimeout(() => {
             setFirstLoad(false);          
-        }, 4000);
+        }, 2500);
     }, []);  
 
     return (
         <div className={computedClassName}>
+            {FirstLoad ? 
             <div className='logo-container'>
-                {FirstLoad ? <div><div className='letter'>A</div><Logo /></div> : <Portfolio />}
-            </div>
+                <div className='letter'>
+                    A
+                </div>
+                <Logo />
+            </div> 
+            : 
+            <Portfolio />}        
         </div>
     );
 }
