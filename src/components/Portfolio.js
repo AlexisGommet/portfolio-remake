@@ -3,7 +3,7 @@ import '../App.css';
 function Portfolio() {
 
     return (
-        <div className='Portoflio-bg'>
+        <div className='Portfolio-bg'>
             Work in progress
         </div>
     );
