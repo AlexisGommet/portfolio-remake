@@ -9,8 +9,9 @@
 /coverage
 
 /.firebase
-
+.firebase
 /public
+public
 
 # production
 /build
