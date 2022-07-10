@@ -1,0 +1,32 @@
+.Email {
+    position: fixed;
+    right: 5%;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    writing-mode: vertical-rl;
+}
+
+#mail{
+    color: var(--light-slate);
+    transition: all 0.25s ease-in-out;
+    text-decoration: none;
+    font-size: small; 
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+#mail:hover{
+    transform: translate(0px,-5px);
+    color: var(--green);
+}
+
+.Email::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: var(--light-slate);
+}

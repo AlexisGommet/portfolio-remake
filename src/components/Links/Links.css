@@ -1,0 +1,29 @@
+.Links {
+    position: fixed;
+    left: 5%;
+    bottom: 0;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.Links > a{
+    cursor: pointer;
+}
+
+.feather{
+    transition: all 0.25s ease-in-out;
+    color: var(--light-slate);
+}
+.feather:hover{
+    transform: translate(0px,-5px);
+    color: var(--green);
+}
+
+.Links::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: var(--light-slate);
+}

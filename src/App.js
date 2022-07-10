@@ -1,5 +1,5 @@
 import { ReactComponent as Logo } from './logo.svg';
-import Portfolio from './components/Portfolio.js';
+import Portfolio from './components/Portfolio/Portfolio.js';
 import './App.css';
 import { useEffect, useState } from 'react';
 
