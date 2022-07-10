@@ -1,5 +1,6 @@
 import './Navbar.css';
 import logo from '../../assets/Logo_letter-removebg.png';
+import CV from '../../assets/CV_EN.pdf';
 
 function Navbar () {
 
@@ -12,7 +13,7 @@ function Navbar () {
                     <div className='index-el'><div className='number'>2. </div>Experience</div>
                     <div className='index-el'><div className='number'>3. </div>Work</div>
                     <div className='index-el'><div className='number'>4. </div>Contact</div>
-                    <button>Resume</button>
+                    <a href={CV} target='_blank' rel="noreferrer"><button>Resume</button></a>
                 </div>
             </nav>
         </header>

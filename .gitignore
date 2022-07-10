@@ -10,8 +10,6 @@
 
 /.firebase
 .firebase
-/public
-public
 
 # production
 /build

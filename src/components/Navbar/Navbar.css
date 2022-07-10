@@ -45,7 +45,7 @@ header{
     display: inline; 
 }
 
-.index > button{
+.index > a > button{
     width: 100px;
     height: 40px;
     color: var(--green);
@@ -56,6 +56,6 @@ header{
     cursor: pointer;
     transition: all 0.25s ease-in-out;
 }
-.index > button:hover{
+.index > a > button:hover{
     background-color: rgba(100,255,218,0.1);;
 }
