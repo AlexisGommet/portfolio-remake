@@ -1,10 +1,12 @@
 .Links {
     position: fixed;
-    left: 5%;
+    left: 3.5%;
     bottom: 0;
     gap: 25px;
     display: flex;
     flex-direction: column;
+    opacity: 0;
+    animation: fadeIn calc(var(--animation-time) * 4) 2.5s ease-in-out forwards;
 }
 .Links > a{
     cursor: pointer;
@@ -26,4 +28,13 @@
     height: 90px;
     margin: 0px auto;
     background-color: var(--light-slate);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

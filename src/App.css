@@ -2,13 +2,36 @@
 
 body{
     font-family: 'Roboto';
+    overflow-y: scroll;
 }
 
 :root{
     --bg-loading: #020C1B;
     --bg-portfolio: #0A192F;
     --green: #64FFDA;
+    --slate: #8892B0;
     --light-slate: #CCD6F6;
+    --dark-slate: #495670;
+    --animation-time: 0.10s
+}
+
+:focus-visible {
+    outline: 2px dashed var(--green);
+    outline-offset: 3px;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+  
+::-webkit-scrollbar-track {
+    background-color: var(--bg-portfolio);
+}
+  
+::-webkit-scrollbar-thumb {
+    background: var(--dark-slate);
+    border: 3px solid var(--bg-portfolio);
+    border-radius: 2em;
 }
 
 .bg-dark{
@@ -20,11 +43,11 @@ body{
 }
 
 .App{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
     width: 100%;
+    min-height: 100vh;
     transition: all ease-in-out 0.5s;
 }
 
@@ -37,7 +60,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     transform-origin: left top;
-    animation: shrink 0.3s 2s linear forwards;
+    animation: shrink 0.15s 2s linear forwards;
 }
 
 .letter {

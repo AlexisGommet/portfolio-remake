@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     color: var(--light-slate);
-    margin: 10px;
+    margin: 25px;
     align-items: center;
     justify-content: space-between;
     font-weight: bold;
@@ -18,9 +18,14 @@ header{
 }
 
 .logo{
+    position: relative;
     width: 50px;
     height: 50px;
-    margin-left: 3%;
+    opacity: 0;
+}
+
+#anchor{
+    margin-left: 2%;
 }
 
 .index{
@@ -35,6 +40,7 @@ header{
 .index-el{
     cursor: pointer;
     transition: all 0.25s ease-in-out;
+    opacity: 0;
 }
 .index-el:hover{
     color: var(--green);
@@ -55,7 +61,48 @@ header{
     letter-spacing: 2px;
     cursor: pointer;
     transition: all 0.25s ease-in-out;
+    opacity: 0;
 }
 .index > a > button:hover{
     background-color: rgba(100,255,218,0.1);;
+}
+
+.anim0{
+    animation: fadeIn calc(var(--animation-time) * 3) 0.30s ease-in-out forwards, animToBottom calc(var(--animation-time) * 3) 0.30s ease-in-out forwards;
+}
+.anim1{
+    animation: fadeIn calc(var(--animation-time) * 3) calc(var(--animation-time) * 0 + 0.50s) ease-in-out forwards, animToBottom calc(var(--animation-time) * 3) calc(var(--animation-time) * 0 + 0.50s) ease-in-out forwards;
+}
+.anim2{
+    animation: fadeIn calc(var(--animation-time) * 3) calc(var(--animation-time) * 1 + 0.50s) ease-in-out forwards, animToBottom calc(var(--animation-time) * 3) calc(var(--animation-time) * 1 + 0.50s) ease-in-out forwards;
+}
+.anim3{
+    animation: fadeIn calc(var(--animation-time) * 3) calc(var(--animation-time) * 2 + 0.50s) ease-in-out forwards, animToBottom calc(var(--animation-time) * 3) calc(var(--animation-time) * 2 + 0.50s) ease-in-out forwards;
+}
+.anim4{
+    animation: fadeIn calc(var(--animation-time) * 3) calc(var(--animation-time) * 3 + 0.50s) ease-in-out forwards, animToBottom calc(var(--animation-time) * 3) calc(var(--animation-time) * 3 + 0.50s) ease-in-out forwards;
+}
+.anim5{
+    animation: fadeIn calc(var(--animation-time) * 3) calc(var(--animation-time) * 4 + 0.50s) ease-in-out forwards, animToBottom calc(var(--animation-time) * 3) calc(var(--animation-time) * 4 + 0.50s) ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes animToBottom {
+    from {
+        transform: translate(0px, -25px);
+    }
+    to {
+        transform: translate(0px, 0px);
+    }
 }

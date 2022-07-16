@@ -1,11 +1,13 @@
 .Email {
     position: fixed;
-    right: 5%;
+    right: 3.5%;
     bottom: 0;
     display: flex;
     flex-direction: row;
     font-weight: bold;
     writing-mode: vertical-rl;
+    opacity: 0;
+    animation: fadeIn calc(var(--animation-time) * 4) 2.55s ease-in-out forwards;
 }
 
 #mail{
@@ -29,4 +31,13 @@
     height: 90px;
     margin: 0px auto;
     background-color: var(--light-slate);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
