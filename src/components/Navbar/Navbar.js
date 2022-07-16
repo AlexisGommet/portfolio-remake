@@ -13,7 +13,7 @@ function Navbar () {
                     <div className='index-el anim2'><div className='number'>2. </div>Experience</div>
                     <div className='index-el anim3'><div className='number'>3. </div>Work</div>
                     <div className='index-el anim4'><div className='number'>4. </div>Contact</div>
-                    <a href={CV} target='_blank' rel="noreferrer"><button className='anim5'>Resume</button></a>
+                    <a href={CV} download="Alexis_Gommet_CV"><button className='anim5'>Resume</button></a>
                 </div>
             </nav>
         </header>
