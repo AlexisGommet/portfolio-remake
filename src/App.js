@@ -11,8 +11,11 @@ function App() {
 
     useEffect(() => {
         setTimeout(() => {
-            setFirstLoad(false);          
-        }, 2500);
+            setFirstLoad(false);        
+        }, 2500); 
+        setTimeout(() => {
+            document.body.style.overflowY = "scroll";          
+        }, 3000);    
     }, []);  
 
     return (

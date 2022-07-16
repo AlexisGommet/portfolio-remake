@@ -14,7 +14,7 @@ function Portfolio() {
             <Email />
             <div className='content' id='content'>
                 <Intro />
-                <h1 style={{color: "var(--green)", marginLeft: "350px"}}>Work in progress</h1>
+                <h1 className='wip'>Work in progress</h1>
             </div> 
         </div>
     );
