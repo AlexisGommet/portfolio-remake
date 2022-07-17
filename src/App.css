@@ -3,6 +3,7 @@
 body{
     font-family: 'Roboto';
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 :root{
@@ -12,6 +13,7 @@ body{
     --slate: #8892B0;
     --light-slate: #CCD6F6;
     --dark-slate: #495670;
+    --lightest-navy: #233554;
     --animation-time: 0.10s
 }
 

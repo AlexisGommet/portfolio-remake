@@ -8,7 +8,7 @@ function Intro() {
             <div className='intro-text anim8'>I'm a computer science student in Angers, France.
                  I like to build all things web-related. Currently,
                  I'm contributing to the development of 
-                 <a href='https://www.kameobikes.com/' target='_blank' rel="noreferrer">
+                 <a className='animated-anchor' href='https://www.kameobikes.com/' target='_blank' rel="noreferrer">
                     <div className='kameo'>&nbsp;Kameo Bikes</div>
                 </a>
                 's ERP and internal tools.

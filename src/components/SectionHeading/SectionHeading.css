@@ -1,0 +1,25 @@
+.SectionHeading{
+   display: flex;
+   flex-direction: row; 
+   gap: 25px;
+   letter-spacing: 1.5px;
+   margin-bottom: 50px;
+}
+
+.heading-number{
+    color: var(--green);
+}
+
+.heading-text{
+    color: var(--light-slate);
+}
+.heading-text::after{
+    position: relative;
+    display: inline-block;
+    content: "";
+    bottom: 30%;
+    margin-left: 25px;
+    height: 1px;
+    width: 300px;
+    background-color: var(--lightest-navy);
+}

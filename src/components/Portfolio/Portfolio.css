@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500&family=Roboto:wght@300&display=swap');
 
-.content{
+#content{
     display: flex;
     flex-direction: column;
+    gap: 500px;
     margin: 300px auto;
     width: 60%;
 }
@@ -28,6 +29,10 @@
     transform: translate(0px, 0px);
 }
 
+.center{
+    margin: 0 auto;
+}
+
 
 
 
@@ -36,8 +41,10 @@
 
 .wip{
     color: var(--green);
-    margin-left: 350px;
-    margin-top: 250px;
+    position: absolute;
+    top: 80vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
     opacity: 0;
     animation: fadeIn calc(var(--animation-time) * 4) 3s ease-in-out forwards;
 }

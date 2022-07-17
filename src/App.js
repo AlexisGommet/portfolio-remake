@@ -2,6 +2,7 @@ import { ReactComponent as Logo } from './logo.svg';
 import Portfolio from './components/Portfolio/Portfolio.js';
 import './App.css';
 import { useEffect, useState } from 'react';
+import "animate.css/animate.min.css";
 
 function App() {
 
