@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500&family=Roboto:wght@300&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Roboto';
     overflow-y: hidden;
@@ -34,6 +38,11 @@ body{
     background: var(--dark-slate);
     border: 3px solid var(--bg-portfolio);
     border-radius: 2em;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .bg-dark{

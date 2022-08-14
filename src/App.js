@@ -15,7 +15,11 @@ function App() {
             setFirstLoad(false);        
         }, 2500); 
         setTimeout(() => {
-            document.body.style.overflowY = "scroll";          
+            document.body.style.overflowY = "scroll";
+            const clickedAnchor = window.location.href.split('/')[3];
+            if(clickedAnchor){
+                document.querySelector(clickedAnchor).scrollIntoView({ behavior: 'smooth' });  
+            }                 
         }, 3000);    
     }, []);  
 

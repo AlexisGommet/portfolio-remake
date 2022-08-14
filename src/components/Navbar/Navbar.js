@@ -1,15 +1,45 @@
 import './Navbar.css';
 import logo from '../../assets/Logo_letter-removebg.png';
 import CV from '../../assets/CV_EN.pdf';
+import { useState, useRef, useEffect } from 'react';
 
 function Navbar () {
 
+    const [computedClassName, setComputedClassName] = useState('');
+
+    let lastScrollTop = useRef(0);
+
+    function scrollCheck(){
+
+        const st = document.documentElement.scrollTop;
+        let class_name = '';
+
+        if(st !== 0){         
+            class_name += 'not-top';    
+        }
+        
+        if (lastScrollTop.current < st){
+            class_name += ' decoupled';
+        }
+
+        setComputedClassName(class_name);
+
+        lastScrollTop.current = st <= 0 ? 0 : st;
+    }
+
+    useEffect(() => {      
+        window.addEventListener("scroll", scrollCheck);
+        return () => {
+            window.removeEventListener("scroll", scrollCheck);
+        }
+    }, []);
+
     return(
-        <header>
+        <header className={computedClassName}>
             <nav className="Navbar">
                 <a href='https://portfolio-remake-ef1ce.web.app/' id='anchor'><img className='logo anim0' src={logo} alt="Logo" /></a>
                 <div className='index'>
-                    <div className='index-el anim1'><div className='number'>1. </div>About</div>
+                    <a href='#About'><div className='index-el anim1'><div className='number'>1. </div>About</div></a>
                     <div className='index-el anim2'><div className='number'>2. </div>Experience</div>
                     <div className='index-el anim3'><div className='number'>3. </div>Work</div>
                     <div className='index-el anim4'><div className='number'>4. </div>Contact</div>
