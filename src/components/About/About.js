@@ -6,9 +6,8 @@ import { useRef } from 'react';
 
 function About() {
 
-    // TODO: animate navbar and check it's z-index
-
     const anchorRef = useRef('About');
+    const technologies = ['Node', 'React', 'Vue', 'Laravel', 'Stripe', 'WebSockets'];
 
     return (
         <>  
@@ -19,12 +18,26 @@ function About() {
             <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce="true" duration="1.5">
                 <div className="About">
                     <div className='about-text'>
-                        Text Text Text Text Text Text Text Text Text Text Text 
-                        Text Text Text Text Text Text Text Text Text Text Text
-                        Text Text Text Text Text Text Text Text Text Text Text
-                        Text Text Text Text Text Text Text Text Text Text Text
-                        Text Text Text Text Text Text Text Text Text Text Text
-                        Text Text Text Text Text Text Text Text Text Text Text 
+                        <p>
+                            Hello! My name is Alexis and I enjoy creating web related things.
+                            I already had introductions to programming going back to high school 
+                            with classes about Python, HTML or Java,
+                            but my interest in web development started back in 2021 with an 
+                            introduction to Javascript course with an entertaining teacher      
+                            that lit my passion for web development.
+                        </p>
+                        <div>
+                            This summer I am working at 
+                            <a className='animated-anchor' href='https://www.kameobikes.com/' target='_blank' rel="noreferrer">
+                                <div className='kameo'>&nbsp;Kameo Bikes</div>
+                            </a>, building and refactoring the new version of their ERP app.
+                        </div>
+                        <p>
+                            Here are a few technologies I’ve been working with recently :
+                        </p>
+                        <ul className='about-grid'>
+                            {technologies.map((technology, index) => <li key={index}>{technology}</li>)}
+                        </ul>
                     </div>
                     <div className='profile_picture'>
                         <div className='square'></div>

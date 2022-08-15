@@ -1,33 +1,34 @@
 import './Navbar.css';
 import logo from '../../assets/Logo_letter-removebg.png';
 import CV from '../../assets/CV_EN.pdf';
-import { useState, useRef, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 function Navbar () {
 
     const [computedClassName, setComputedClassName] = useState('');
 
-    let lastScrollTop = useRef(0);
+    useEffect(() => {    
 
-    function scrollCheck(){
+        let lastScrollTop = 0;
 
-        const st = document.documentElement.scrollTop;
-        let class_name = '';
+        function scrollCheck(){
 
-        if(st !== 0){         
-            class_name += 'not-top';    
+            const st = document.documentElement.scrollTop;
+            let class_name = '';
+    
+            if(st !== 0){         
+                class_name += 'not-top';    
+            }
+            
+            if (lastScrollTop < st){
+                class_name += ' decoupled';
+            }
+    
+            setComputedClassName(class_name);
+    
+            lastScrollTop = st <= 0 ? 0 : st;
         }
-        
-        if (lastScrollTop.current < st){
-            class_name += ' decoupled';
-        }
 
-        setComputedClassName(class_name);
-
-        lastScrollTop.current = st <= 0 ? 0 : st;
-    }
-
-    useEffect(() => {      
         window.addEventListener("scroll", scrollCheck);
         return () => {
             window.removeEventListener("scroll", scrollCheck);
