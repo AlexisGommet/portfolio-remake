@@ -27,9 +27,9 @@ function About() {
                             that lit my passion for web development.
                         </p>
                         <div>
-                            This summer I am working at 
+                            This summer I am working at&nbsp;
                             <a className='animated-anchor' href='https://www.kameobikes.com/' target='_blank' rel="noreferrer">
-                                <div className='kameo'>&nbsp;Kameo Bikes</div>
+                                <div className='kameo'>Kameo Bikes</div>
                             </a>, building and refactoring the new version of their ERP app.
                         </div>
                         <p>
