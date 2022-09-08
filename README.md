@@ -2,10 +2,10 @@
 
 Remaking of my old portfolio
 
-https://portfolio-remake-ef1ce.web.app/
+https://portfolio.alexisgommet.com/
 
 
 
 # Old Portfolio
 
-https://portfolio-d230a.web.app/
+https://oldportfolio.alexisgommet.com/
