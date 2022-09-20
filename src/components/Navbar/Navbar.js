@@ -38,10 +38,10 @@ function Navbar () {
     return(
         <header className={computedClassName}>
             <nav className="Navbar">
-                <a href='https://portfolio-remake-ef1ce.web.app/' id='anchor'><img className='logo anim0' src={logo} alt="Logo" /></a>
+                <a href='https://portfolio.alexisgommet.com/' id='anchor'><img className='logo anim0' src={logo} alt="Logo" /></a>
                 <div className='index'>
                     <a href='#About'><div className='index-el anim1'><div className='number'>1. </div>About</div></a>
-                    <div className='index-el anim2'><div className='number'>2. </div>Experience</div>
+                    <a href='#Experience'><div className='index-el anim2'><div className='number'>2. </div>Experience</div></a>
                     <div className='index-el anim3'><div className='number'>3. </div>Work</div>
                     <div className='index-el anim4'><div className='number'>4. </div>Contact</div>
                     <a href={CV} download="Alexis_Gommet_CV"><button className='anim5'>Resume</button></a>

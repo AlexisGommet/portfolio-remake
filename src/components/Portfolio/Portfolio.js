@@ -4,6 +4,7 @@ import Email from '../Email/Email.js';
 import Links from '../Links/Links.js';
 import Intro from '../Intro/Intro.js';
 import About from '../About/About.js';
+import Experience from '../Experience/Experience.js';
 
 function Portfolio() {
 
@@ -18,6 +19,7 @@ function Portfolio() {
                 <h1 className='wip'>Work in progress</h1>
                 <div className='center'>
                     <About />
+                    <Experience />
                 </div>
             </div> 
         </>

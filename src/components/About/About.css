@@ -11,6 +11,7 @@
 
 .about-text{
     width: 600px;
+    text-align: justify;
 }
 
 ul{
@@ -18,7 +19,7 @@ ul{
     padding-left: 0;
 }
 
-li::before{
+.grid-item::before{
     content: "▹";
     margin-right: 15px;
     color: var(--green);
@@ -27,7 +28,7 @@ li::before{
 
 .about-grid{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     font-size: small;
     width: 50%;
     column-gap: 50px;

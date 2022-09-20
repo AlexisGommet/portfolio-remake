@@ -30,7 +30,10 @@
 }
 
 .center{
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
+    gap: 500px;
 }
 
 
@@ -42,7 +45,7 @@
 .wip{
     color: var(--green);
     position: absolute;
-    top: 80vh;
+    top: 90vh;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
