@@ -1,0 +1,18 @@
+.dynamic-text{
+    display: flex;
+    flex-direction: column;
+    color: var(--light-slate);
+    width: 600px;
+    margin-left: 50px;
+    margin-top: 12px;
+}
+
+.fade-enter, .fade-exit-active {
+    opacity: 0;
+} 
+.fade-enter-active, .fade-exit-active {
+    transition: opacity 300ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+.fade-exit, .fade-enter-active {
+    opacity: 1;
+}

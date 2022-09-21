@@ -29,7 +29,7 @@ function About() {
                         <div>
                             This summer I worked at&nbsp;
                             <a className='animated-anchor' href='https://www.kameobikes.com/' target='_blank' rel="noreferrer">
-                                <div className='kameo'>Kameo Bikes</div>
+                                <div className='green'>Kameo Bikes</div>
                             </a>, building and refactoring the new version of their ERP app.
                         </div>
                         <p>

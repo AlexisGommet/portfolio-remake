@@ -9,7 +9,7 @@ function Intro() {
                 I like to build all things web-related. Recently,
                 I contributed to the development of&nbsp; 
                 <a className='animated-anchor' href='https://www.kameobikes.com/' target='_blank' rel="noreferrer">
-                    <div className='kameo'>Kameo Bikes</div>
+                    <div className='green'>Kameo Bikes</div>
                 </a>
                 's ERP and internal tools.
             </div>
