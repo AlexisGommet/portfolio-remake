@@ -11,7 +11,7 @@
 }
 
 .heading-text{
-    color: var(--light-slate);
+    color: var(--lightest-slate);
 }
 .heading-text::after{
     position: relative;

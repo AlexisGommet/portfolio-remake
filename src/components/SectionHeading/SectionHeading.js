@@ -7,7 +7,7 @@ function SectionHeading(props) {
     return (      
         <h1 className="SectionHeading">                
             <div className='heading-number'>{number}.</div>
-            <div className='heading-text'><a id={useRef.current} href={useRef.current}>{text}</a></div>           
+            <div className='heading-text'><a id={useRef.current} href={`#${useRef.current}`}>{text}</a></div>           
         </h1>  
     );
 }

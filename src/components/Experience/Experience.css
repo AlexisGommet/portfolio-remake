@@ -32,3 +32,7 @@
     cursor: pointer;
     transition: all 0.25s ease-in-out;
 }
+
+.Experience-container{
+    height: 420px;
+}

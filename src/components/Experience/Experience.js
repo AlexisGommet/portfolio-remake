@@ -7,15 +7,15 @@ import ExperienceText from '../ExperienceText/ExperienceText';
 function Experience() {
 
     const anchorRef = useRef('Experience');
-    const experiences = ['Kameo Bikes', 'Activ\'Esaip'];
-    const [selected, setSelected] = useState(0);
+    const experiences = ['Next...', 'Kameo Bikes', 'Activ\'Esaip'];
+    const [selected, setSelected] = useState(1);
    
     useEffect(() => {
         document.querySelector('.exp-list').style.setProperty('--height', `${(selected * 55) + 16}px`); 
     })     
 
     return (
-        <div>
+        <div className='Experience-container'>
             <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce="true" duration="1.5">
                 <SectionHeading text="Experience" number="2" useRef={anchorRef}/>
             </AnimationOnScroll>

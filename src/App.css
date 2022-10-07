@@ -15,8 +15,10 @@ body{
     --bg-portfolio: #0A192F;
     --green: #64FFDA;
     --slate: #8892B0;
-    --light-slate: #CCD6F6;
+    --light-slate: #A8B2D1;
+    --lightest-slate: #CCD6F6;
     --dark-slate: #495670;
+    --light-navy: #112240;
     --lightest-navy: #233554;
     --animation-time: 0.10s
 }
@@ -123,6 +125,14 @@ a {
 
 .slate{
     color: var(--slate);
+}
+
+.light-slate{
+    color: var(--light-slate);
+}
+
+.lightest-slate{
+    color: var(--lightest-slate);
 }
 
 ul{

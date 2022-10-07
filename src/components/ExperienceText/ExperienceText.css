@@ -1,7 +1,7 @@
 .dynamic-text{
     display: flex;
     flex-direction: column;
-    color: var(--light-slate);
+    color: var(--lightest-slate);
     width: 600px;
     margin-left: 50px;
     margin-top: 12px;

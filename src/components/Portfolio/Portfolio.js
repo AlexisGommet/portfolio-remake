@@ -5,6 +5,10 @@ import Links from '../Links/Links.js';
 import Intro from '../Intro/Intro.js';
 import About from '../About/About.js';
 import Experience from '../Experience/Experience.js';
+import Work from '../Work/Work.js';
+
+// TODO: make a section component with animations and heading,
+// Redo image overlays
 
 function Portfolio() {
 
@@ -20,6 +24,7 @@ function Portfolio() {
                 <div className='center'>
                     <About />
                     <Experience />
+                    <Work />
                 </div>
             </div> 
         </>

@@ -4,7 +4,7 @@ function Intro() {
     return (
         <div className="Intro">
             <div className='my-name anim6'>Hi, my name is</div>
-            <h2 className='anim7'>Alexis Gommet</h2>
+            <h2 className='anim7 heading'>Alexis Gommet</h2>
             <div className='intro-text anim8'>I'm a computer science student in Angers, France.
                 I like to build all things web-related. Recently,
                 I contributed to the development of&nbsp; 

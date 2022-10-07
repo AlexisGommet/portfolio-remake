@@ -42,7 +42,7 @@ function Navbar () {
                 <div className='index'>
                     <a href='#About'><div className='index-el anim1'><div className='number'>1. </div>About</div></a>
                     <a href='#Experience'><div className='index-el anim2'><div className='number'>2. </div>Experience</div></a>
-                    <div className='index-el anim3'><div className='number'>3. </div>Work</div>
+                    <a href='#Work'><div className='index-el anim3'><div className='number'>3. </div>Work</div></a>
                     <div className='index-el anim4'><div className='number'>4. </div>Contact</div>
                     <a href={CV} download="Alexis_Gommet_CV"><button className='anim5'>Resume</button></a>
                 </div>

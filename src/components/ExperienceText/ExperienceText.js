@@ -42,6 +42,13 @@ function ExperienceText({ selected }) {
                     <>
                         {selected === 0 &&
                             <>
+                                <h3 style={{marginBottom: 0}}>What next ? &#128064;
+                                    
+                                </h3>                              
+                            </>
+                        }
+                        {selected === 1 &&
+                            <>
                                 <h3 style={{marginBottom: 0}}>Web developper intern 
                                     <span className='green'> @&nbsp;
                                         <a className='animated-anchor' href='https://www.kameobikes.com/' target='_blank' rel="noreferrer">
@@ -57,7 +64,7 @@ function ExperienceText({ selected }) {
                                 </div>
                             </>
                         }
-                        {selected === 1 &&
+                        {selected === 2 &&
                             <>
                                 <h3 style={{marginBottom: 0}}>Web developper 
                                     <span className='green'> @&nbsp;
