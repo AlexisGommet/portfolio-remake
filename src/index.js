@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './i18n';
 import App from './App';
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import {initializeApp} from "firebase/app";
 
 const firebaseConfig = {
     apiKey: "AIzaSyDby-ZGdyt3npVf0KmpGKrKDdFarWVEzUM",
@@ -15,9 +15,7 @@ const firebaseConfig = {
     measurementId: "G-5JZNLQYT3W"
   };
   
-const app = initializeApp(firebaseConfig);
-// eslint-disable-next-line no-unused-vars
-const analytics = getAnalytics(app);
+initializeApp(firebaseConfig);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

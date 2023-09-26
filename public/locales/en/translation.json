@@ -1,0 +1,49 @@
+{
+  "wip": "Work in progress",
+  "content": "Skip to content",
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "work": "Work",
+    "contact": "Contact",
+    "resume": "Resume"
+  },
+  "intro": {
+    "name": "Hi, my name is",
+    "text": "I'm a computer science student in Angers, France. I like to build all things web-related. Recently, I contributed to the development of <a class='animated-anchor' href='https://www.kameobikes.com/' target='_blank' rel='noopener noreferrer'> <div class='green'>Kameo Bikes</div></a>'s ERP and internal tools."
+  },
+  "about": {
+    "title": "About Me",
+    "text_1": "Hello! My name is Alexis and I enjoy creating web related things. I already had introductions to programming going back to high school with classes about Python, HTML or Java,but my interest in web development started back in 2021 with an introduction to Javascript course with an entertaining teacher that lit my passion for web development.",
+    "text_2": "This summer I worked at <a class='animated-anchor' href='https://www.kameobikes.com/' target='_blank' rel='noopener noreferrer'> <div class='green'>Kameo Bikes</div></a>, building and refactoring the new version of their ERP app.",
+    "technologies": "Here are a few technologies I’ve been working with recently :"
+  },
+  "experience": {
+    "title": "Experience",
+    "items": {
+      "0": {
+        "title": "What next ? &#128064;"
+      },
+      "1": {
+        "title": "Web developper intern",
+        "date": "July - September 2022",
+        "bullet_points": "2 month internship|Integrated real time updates with Websockets|Various performance optimizations and bug fixes|Implemented a client chat feature with it's overview dashboard|Vue, Laravel"
+      },
+      "2": {
+        "title": "Web developper",
+        "date": "February - June 2022",
+        "bullet_points": "Service paid by the company to the school to fund parts of a student's curriculum|The company was opening it's new shop and needed a planning tool for the workshop to keep track of the work to be done and assigning it to different people|Vue, Laravel"
+      }
+    }
+  },
+  "work": {
+    "title": "Some projects I've done",
+    "items": {
+      "1": {
+        "title": "US Media Archiver",
+        "text": "Archiver and comparator of CNN and FOX news headlines, screenshots taken every 6 hours with a cloud function using Puppeteer",
+        "flairs": "Firebase, Next, Puppeteer, Typescript"
+      }
+    }
+  }
+}

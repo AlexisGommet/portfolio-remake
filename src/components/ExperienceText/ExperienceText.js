@@ -1,6 +1,7 @@
 import './ExperienceText.css';
 import { Transition, SwitchTransition } from "react-transition-group";
 import styled from "styled-components";
+import {useTranslation} from "react-i18next";
 
 const FadeDiv = styled.div`
     transition: 0.2s;
@@ -16,19 +17,7 @@ const FadeTransition = ({ children, ...rest }) => (
 
 function ExperienceText({ selected }) {
 
-    const items_1 = [
-        '2 month internship',
-        'Integrated real time updates with Websockets',
-        'Various performance optimizations and bug fixes',
-        'Implemented a client chat feature with it\'s overview dashboard',
-        'Vue, Laravel'
-    ];
-
-    const items_2 = [
-        'Service paid by the company to the school to fund parts of a student\'s curriculum',
-        'The company was opening it\'s new shop and needed a planning tool for the workshop to keep track of the work to be done and assigning it to different people',
-        'Vue, Laravel'
-    ];
+    const { t } = useTranslation();
 
     return (
         <div className='dynamic-text'>
@@ -42,45 +31,31 @@ function ExperienceText({ selected }) {
                     <>
                         {selected === 0 &&
                             <>
-                                <h3 style={{marginBottom: 0}}>What next ? &#128064;
-                                    
-                                </h3>                              
+                                <h3 style={{marginBottom: 0}} dangerouslySetInnerHTML={{__html: t(`experience.items.${selected}.title`)}}></h3>
                             </>
                         }
-                        {selected === 1 &&
+                        {selected !== 0 &&
                             <>
-                                <h3 style={{marginBottom: 0}}>Web developper intern 
+                                <h3 style={{marginBottom: 0}}>{t(`experience.items.${selected}.title`)}
                                     <span className='green'> @&nbsp;
-                                        <a className='animated-anchor' href='https://www.kameobikes.com/' target='_blank' rel="noreferrer">
+                                        <a className='animated-anchor' href='https://www.kameobikes.com/' target='_blank' rel='noopener noreferrer'>
                                             <div>Kameo Bikes</div>
                                         </a>
                                     </span>
                                 </h3>
                                 <div className='slate'>
-                                    <h5 style={{marginTop: 0}}>July - September 2022</h5>
+                                    <h5 style={{marginTop: 0}}>{t(`experience.items.${selected}.date`)}</h5>
                                     <ul>
-                                        {items_1.map((item, index) => <li key={index} className='grid-item'>{item}</li>)}
+                                        {
+                                            t(`experience.items.${selected}.bullet_points`)
+                                            .split('|')
+                                            .map((el) => el.trim())
+                                            .map((item, index) => <li key={index} className='grid-item'>{item}</li>)
+                                        }
                                     </ul>
                                 </div>
                             </>
                         }
-                        {selected === 2 &&
-                            <>
-                                <h3 style={{marginBottom: 0}}>Web developper 
-                                    <span className='green'> @&nbsp;
-                                        <a className='animated-anchor' href='https://www.kameobikes.com/' target='_blank' rel="noreferrer">
-                                            <div>Kameo Bikes</div>
-                                        </a>
-                                    </span>
-                                </h3>
-                                <div className='slate'>
-                                    <h5 style={{marginTop: 0}}>February - June 2022</h5>
-                                    <ul>
-                                        {items_2.map((item, index) => <li key={index} className='grid-item'>{item}</li>)}
-                                    </ul>
-                                </div>
-                            </>
-                        } 
                     </>
                 </FadeTransition>
             </SwitchTransition>

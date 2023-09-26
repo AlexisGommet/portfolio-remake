@@ -11,6 +11,9 @@
 /.firebase
 .firebase
 
+/.idea
+/.vscode
+
 # production
 /build
 

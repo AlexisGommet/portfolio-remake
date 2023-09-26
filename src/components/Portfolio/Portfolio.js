@@ -6,21 +6,27 @@ import Intro from '../Intro/Intro.js';
 import About from '../About/About.js';
 import Experience from '../Experience/Experience.js';
 import Work from '../Work/Work.js';
+import {useTranslation} from "react-i18next";
 
-// TODO: make a section component with animations and heading,
-// Redo image overlays
+// TODO: refactor entire sections into component with scrolling animations and section heading,
+// Redo image overlays with css
+// Add new experiences
+// Finish highlighted projects
+// Add other projects and contact
 
 function Portfolio() {
 
+    const { t } = useTranslation();
+
     return (
         <>
-            <a id='skip-content' href='#content'>Skip to content</a>
+            <a id='skip-content' href='#content'>{t('content')}</a>
             <Navbar />
             <Links />
             <Email />
             <div id='content'>
                 <Intro />
-                <h1 className='wip'>Work in progress</h1>
+                <h1 className='wip'>{t('wip')}</h1>
                 <div className='center'>
                     <About />
                     <Experience />

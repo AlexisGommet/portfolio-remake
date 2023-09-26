@@ -3,10 +3,12 @@ import SectionHeading from '../SectionHeading/SectionHeading';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import './Experience.css';
 import ExperienceText from '../ExperienceText/ExperienceText';
+import {useTranslation} from "react-i18next";
 
 function Experience() {
 
     const anchorRef = useRef('Experience');
+    const { t } = useTranslation();
     const experiences = ['Next...', 'Kameo Bikes', 'Activ\'Esaip'];
     const [selected, setSelected] = useState(1);
    
@@ -17,7 +19,7 @@ function Experience() {
     return (
         <div className='Experience-container'>
             <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce="true" duration="1.5">
-                <SectionHeading text="Experience" number="2" useRef={anchorRef}/>
+                <SectionHeading text={t('experience.title')} number="2" useRef={anchorRef}/>
             </AnimationOnScroll>
             <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce="true" duration="1.5">
                 <div className='Experience'>

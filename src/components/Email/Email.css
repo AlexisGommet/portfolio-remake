@@ -7,6 +7,7 @@
     font-weight: bold;
     writing-mode: vertical-rl;
     opacity: 0;
+    z-index: 10;
     animation: fadeIn calc(var(--animation-time) * 4) 2.55s ease-in-out forwards;
 }
 

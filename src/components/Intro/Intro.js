@@ -1,18 +1,15 @@
 import './Intro.css';
+import {useTranslation} from "react-i18next";
 
 function Intro() {
+
+    const { t } = useTranslation();
+
     return (
         <div className="Intro">
-            <div className='my-name anim6'>Hi, my name is</div>
+            <div className='my-name anim6'>{t('intro.name')}</div>
             <h2 className='anim7 heading'>Alexis Gommet</h2>
-            <div className='intro-text anim8'>I'm a computer science student in Angers, France.
-                I like to build all things web-related. Recently,
-                I contributed to the development of&nbsp; 
-                <a className='animated-anchor' href='https://www.kameobikes.com/' target='_blank' rel="noreferrer">
-                    <div className='green'>Kameo Bikes</div>
-                </a>
-                's ERP and internal tools.
-            </div>
+            <div className='intro-text anim8' dangerouslySetInnerHTML={{__html: t('intro.text')}}></div>
         </div>
     );
 }

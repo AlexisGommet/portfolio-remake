@@ -1,0 +1,49 @@
+{
+  "wip": "Travaux en cours",
+  "content": "Aller au contenu",
+  "nav": {
+    "about": "A propos",
+    "experience": "Expérience",
+    "work": "Travail",
+    "contact": "Contact",
+    "resume": "CV"
+  },
+  "intro": {
+    "name": "Salut, je m'appelle",
+    "text": "Je suis étudiant en informatique à Angers. J'aime construire des choses liées au web. Récemment, j'ai contribué au développement de l'ERP de <a class='animated-anchor' href='https://www.kameobikes.com/' target='_blank' rel='noopener noreferrer'> <div class='green'>Kameo Bikes</div></a> et de ses outils internes."
+  },
+  "about": {
+    "title": "A propos de moi",
+    "text_1": "Bonjour! Je m'appelle Alexis et j'aime créer des choses liées au web. J'ai déjà été initié à la programmation depuis le lycée avec des cours sur Python, HTML ou Java, mais mon intérêt pour le développement web a commencé en 2021 avec un cours d'introduction à Javascript avec un professeur divertissant qui a éveillé ma passion pour le développement web.",
+    "text_2": "Cet été, j'ai travaillé chez <a class='animated-anchor' href='https://www.kameobikes.com/' target='_blank' rel='noopener noreferrer'> <div class='green'>Kameo Bikes</div></a>, construisant et refactorisant la nouvelle version de leur application ERP.",
+    "technologies": "Voici quelques technologies avec lesquelles j'ai récemment travaillé :"
+  },
+  "experience": {
+    "title": "Expérience",
+    "items": {
+      "0": {
+        "title": "Et ensuite ? &#128064;"
+      },
+      "1": {
+        "title": "Stagiaire développeur web",
+        "date": "Juillet - Septembre 2022",
+        "bullet_points": "Stage de 2 mois|Intégration des mises à jour en temps réel avec Websockets|Diverses optimisations de performance et corrections de bugs|Mise en place d'une fonctionnalité de chat client avec son tableau de bord d'aperçu|Vue, Laravel"
+      },
+      "2": {
+        "title": "Développeur web",
+        "date": "Février - Juin 2022",
+        "bullet_points": "Service payé par l'entreprise à l'école pour financer une partie du cursus d'un étudiant|L'entreprise ouvrait son nouveau magasin et avait besoin d'un outil de planification pour l'atelier afin de suivre le travail à faire et de l'attribuer à différentes personnes|Vue, Laravel"
+      }
+    }
+  },
+  "travail": {
+    "titre": "Quelques projets que j'ai réalisés",
+    "éléments": {
+      "1": {
+        "titre": "Archive des médias américains",
+        "texte": "Archive et comparatif de titres de nouvelles de CNN et FOX, captures d'écran prises toutes les 6 heures avec une fonction cloud utilisant Puppeteer",
+        "flairs": "Firebase, Next, Puppeteer, Typescript"
+      }
+    }
+  }
+}

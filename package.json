@@ -5,9 +5,13 @@
   "dependencies": {
     "animate.css": "^4.1.1",
     "firebase": "^9.8.4",
+    "i18next": "^23.5.1",
+    "i18next-browser-languagedetector": "^7.1.0",
+    "i18next-http-backend": "^2.2.2",
     "react": "^18.2.0",
     "react-animation-on-scroll": "^5.1.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^13.2.2",
     "react-scripts": "5.0.1",
     "react-transition-group": "^4.4.5",
     "styled-components": "^5.3.5",
