@@ -36,12 +36,12 @@
       }
     }
   },
-  "travail": {
-    "titre": "Quelques projets que j'ai réalisés",
-    "éléments": {
+  "work": {
+    "title": "Quelques projets que j'ai réalisés",
+    "items": {
       "1": {
-        "titre": "Archive des médias américains",
-        "texte": "Archive et comparatif de titres de nouvelles de CNN et FOX, captures d'écran prises toutes les 6 heures avec une fonction cloud utilisant Puppeteer",
+        "title": "Archive des médias américains",
+        "text": "Archive et comparatif de titres de nouvelles de CNN et FOX, captures d'écran prises toutes les 6 heures avec une fonction cloud utilisant Puppeteer",
         "flairs": "Firebase, Next, Puppeteer, Typescript"
       }
     }

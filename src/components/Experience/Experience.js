@@ -1,9 +1,8 @@
-import { useEffect, useRef, useState } from 'react';
-import SectionHeading from '../SectionHeading/SectionHeading';
-import { AnimationOnScroll } from 'react-animation-on-scroll';
+import {useEffect, useRef, useState} from 'react';
 import './Experience.css';
 import ExperienceText from '../ExperienceText/ExperienceText';
 import {useTranslation} from "react-i18next";
+import Section from "../Section/Section";
 
 function Experience() {
 
@@ -17,27 +16,22 @@ function Experience() {
     })     
 
     return (
-        <div className='Experience-container'>
-            <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce="true" duration="1.5">
-                <SectionHeading text={t('experience.title')} number="2" useRef={anchorRef}/>
-            </AnimationOnScroll>
-            <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce="true" duration="1.5">
-                <div className='Experience'>
-                    <ul className='exp-list'>
-                        {experiences.map((item, index) => 
-                            <li 
-                                key={index} 
-                                className={`exp-item${selected === index ? ' green' : ''}`}
-                                onClick={() => setSelected(index)}
-                            >
-                                {item}
-                            </li>
-                        )}
-                    </ul>
-                    <ExperienceText selected={selected}/>
-                </div>  
-            </AnimationOnScroll> 
-        </div>
+        <Section headingText={t('experience.title')} headingNumber={"2"} anchorRef={anchorRef} classProp={'Experience-container'}>
+            <div className="Experience">
+                <ul className="exp-list">
+                    {experiences.map((item, index) =>
+                        <li
+                            key={index}
+                            className={`exp-item${selected === index ? ' green' : ''}`}
+                            onClick={() => setSelected(index)}
+                        >
+                            {item}
+                        </li>
+                    )}
+                </ul>
+                <ExperienceText selected={selected}/>
+            </div>
+        </Section>
     );
 }
 

@@ -1,13 +1,11 @@
 import './SectionHeading.css';
 
-function SectionHeading(props) {
-
-    const { text, number, useRef } = props;
+function SectionHeading({ text, number, anchorRef }) {
 
     return (      
         <h1 className="SectionHeading">                
             <div className='heading-number'>{number}.</div>
-            <div className='heading-text'><a id={useRef.current} href={`#${useRef.current}`}>{text}</a></div>           
+            <div className='heading-text'><a id={anchorRef.current} href={`#${anchorRef.current}`}>{text}</a></div>
         </h1>  
     );
 }

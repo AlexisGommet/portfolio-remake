@@ -8,8 +8,6 @@ i18n
     .use(Backend)
     .use(LanguageDetector)
     .use(initReactI18next)
-    // init i18next
-    // for all options read: https://www.i18next.com/overview/configuration-options
     .init({
         load: "languageOnly",
         detection: {
@@ -17,6 +15,3 @@ i18n
         },
         fallbackLng: 'en',
     });
-
-
-export default i18n;

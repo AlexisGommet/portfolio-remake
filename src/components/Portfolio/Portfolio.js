@@ -8,7 +8,7 @@ import Experience from '../Experience/Experience.js';
 import Work from '../Work/Work.js';
 import {useTranslation} from "react-i18next";
 
-// TODO: refactor entire sections into component with scrolling animations and section heading,
+// TODO:
 // Redo image overlays with css
 // Add new experiences
 // Finish highlighted projects
@@ -24,7 +24,7 @@ function Portfolio() {
             <Navbar />
             <Links />
             <Email />
-            <div id='content'>
+            <main id='content'>
                 <Intro />
                 <h1 className='wip'>{t('wip')}</h1>
                 <div className='center'>
@@ -32,7 +32,7 @@ function Portfolio() {
                     <Experience />
                     <Work />
                 </div>
-            </div> 
+            </main>
         </>
     );
 }
