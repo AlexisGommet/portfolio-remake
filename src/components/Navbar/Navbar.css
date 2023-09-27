@@ -80,7 +80,7 @@ header{
     opacity: 0;
 }
 .index > a > button:hover{
-    background-color: rgba(100,255,218,0.1);;
+    background-color: var(--green-tint);
 }
 
 .anim0{

@@ -1,4 +1,4 @@
-import { ReactComponent as Logo } from './logo.svg';
+import { ReactComponent as Logo } from './assets/icons/logo.svg';
 import Portfolio from './components/Portfolio/Portfolio.js';
 import './App.css';
 import { useEffect, useState } from 'react';

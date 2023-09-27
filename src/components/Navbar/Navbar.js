@@ -56,7 +56,7 @@ function Navbar () {
                     <a href='#About'><div className='index-el anim1'><div className='number'>1. </div>{t('nav.about')}</div></a>
                     <a href='#Experience'><div className='index-el anim2'><div className='number'>2. </div>{t('nav.experience')}</div></a>
                     <a href='#Work'><div className='index-el anim3'><div className='number'>3. </div>{t('nav.work')}</div></a>
-                    <div className='index-el anim4'><div className='number'>4. </div>{t('nav.contact')}</div>
+                    <a href='#Contact'><div className='index-el anim4'><div className='number'>4. </div>{t('nav.contact')}</div></a>
                     <a href={PdfContent} target="_blank" rel="noopener noreferrer"><button className='anim5'>{t('nav.resume')}</button></a>
                 </div>
             </nav>

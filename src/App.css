@@ -5,7 +5,7 @@ html{
 }
 
 body{
-    font-family: 'Roboto';
+    font-family: 'Roboto', serif;
     overflow-y: hidden;
     overflow-x: hidden;
 }
@@ -20,6 +20,7 @@ body{
     --dark-slate: #495670;
     --light-navy: #112240;
     --lightest-navy: #233554;
+    --green-tint: rgba(100,255,218,0.1);
     --animation-time: 0.10s
 }
 

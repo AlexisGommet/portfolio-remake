@@ -45,5 +45,11 @@
         "flairs": "Firebase, Next, Puppeteer, Typescript"
       }
     }
+  },
+  "credits": "Design credits to&nbsp;<a href='https://brittanychiang.com/' rel='noopener noreferrer' target='_blank'>Brittany Chiang</a>",
+  "contact": {
+    "title": "Contact me",
+    "text": "Although I’m not currently looking for any new opportunities, my inbox is always open.",
+    "button": "Send me a message"
   }
 }

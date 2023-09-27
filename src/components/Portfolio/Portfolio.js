@@ -7,12 +7,13 @@ import About from '../About/About.js';
 import Experience from '../Experience/Experience.js';
 import Work from '../Work/Work.js';
 import {useTranslation} from "react-i18next";
+import Contact from "../Contact/Contact";
 
 // TODO:
 // Redo image overlays with css
 // Add new experiences
 // Finish highlighted projects
-// Add other projects and contact
+// Add other projects
 
 function Portfolio() {
 
@@ -31,8 +32,10 @@ function Portfolio() {
                     <About />
                     <Experience />
                     <Work />
+                    <Contact />
                 </div>
             </main>
+            <footer dangerouslySetInnerHTML={{__html: t('credits')}}></footer>
         </>
     );
 }

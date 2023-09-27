@@ -1,0 +1,30 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 30px;
+    color: var(--slate);
+}
+
+.contact button{
+    color: var(--green);
+    border: 1px solid var(--green);
+    padding: 12px;
+    border-radius: 10px;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+.contact button:hover{
+    background-color: var(--green-tint);
+}
+
+.contact-flex{
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    align-items: center;
+}
