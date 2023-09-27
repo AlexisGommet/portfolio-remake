@@ -20,7 +20,7 @@
 
 .project_picture{
     position: relative;
-    background: url('../../assets/screen_archiver_overlay.png');
+    background: url('../../assets/screen_archiver.png');
     background-size: cover;
     width: 550px;
     height: 400px;
@@ -28,9 +28,20 @@
     transition: all 0.25s ease-in-out;  
     
 }
-.project_picture:hover{
-    background: url('../../assets/screen_archiver.png');
-    background-size: cover;
+.project_picture::after {
+    content: "";
+    background: var(--overlay);
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+}
+.project_picture:hover::after {
+    opacity: 0;
 }
 
 

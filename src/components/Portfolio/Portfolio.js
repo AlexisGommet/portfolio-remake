@@ -10,7 +10,6 @@ import {useTranslation} from "react-i18next";
 import Contact from "../Contact/Contact";
 
 // TODO:
-// Redo image overlays with css
 // Add new experiences
 // Finish highlighted projects
 // Add other projects
