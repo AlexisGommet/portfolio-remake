@@ -20,7 +20,7 @@
 
 .project_picture{
     position: relative;
-    background: url('../../assets/screen_archiver.png');
+    background: url('/src/assets/images/screen_archiver.png');
     background-size: cover;
     width: 550px;
     height: 400px;

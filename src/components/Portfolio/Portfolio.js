@@ -11,9 +11,9 @@ import Contact from "../Contact/Contact";
 
 // TODO:
 // Add new experiences
-// Update Resumes (deal with the hashes ?)
 // Finish highlighted projects
 // Add other projects
+// Responsive
 
 function Portfolio() {
 

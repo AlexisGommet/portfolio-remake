@@ -1,5 +1,5 @@
 import './Navbar.css';
-import logo from '../../assets/Logo_letter-removebg.png';
+import logo from '../../assets/images/Logo_letter-removebg.png';
 import { useState, useEffect } from 'react';
 import {useTranslation} from "react-i18next";
 
@@ -37,7 +37,7 @@ function Navbar () {
         const resumeLocales = ['FR', 'EN'];
         const resume = resumeLocales.find((arrayLocale) => locale === arrayLocale) || 'EN';
 
-        import(`../../assets/Alexis_Gommet_CV_${resume}.pdf`)
+        import(`/src/assets/documents/Alexis_Gommet_CV-${resume}.pdf`)
             .then(pdf => {
                 setPdfContent(pdf.default);
             })

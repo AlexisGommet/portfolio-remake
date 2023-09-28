@@ -24,7 +24,7 @@
 
 .profile_picture{
     position: relative;
-    background: url('../../assets/photo_de_profil.jpg');
+    background: url('/src/assets/images/photo_de_profil.jpg');
     background-size: cover;
     width: 300px;
     height: 300px;

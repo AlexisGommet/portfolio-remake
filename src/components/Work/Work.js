@@ -1,5 +1,5 @@
 import {useRef} from 'react';
-import Archiver from '../../assets/screen_archiver.png';
+import Archiver from '../../assets/images/screen_archiver.png';
 import {ReactComponent as GitHub} from '../../assets/icons/GitHub.svg';
 import {ReactComponent as ExternalLink} from '../../assets/icons/External_Link.svg';
 import './Work.css';

@@ -1,5 +1,5 @@
 import './About.css';
-import Me from '../../assets/photo_de_profil.jpg';
+import Me from '../../assets/images/photo_de_profil.jpg';
 import {useRef} from 'react';
 import {useTranslation} from "react-i18next";
 import Section from "../Section/Section";
