@@ -4,7 +4,7 @@ import styled from "styled-components";
 import {useTranslation} from "react-i18next";
 
 const FadeDiv = styled.div`
-    transition: 0.2s;
+    transition: 250ms;
     opacity: ${({ state }) => (state === "entered" ? 1 : 0)};
     display: ${({ state }) => (state === "exited" ? "none" : "block")};
 `;
