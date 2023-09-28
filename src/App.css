@@ -8,6 +8,7 @@ body{
     font-family: 'Roboto', serif;
     overflow-y: hidden;
     overflow-x: hidden;
+    counter-reset: section; /* initialize the counter */
 }
 
 :root{
@@ -20,9 +21,11 @@ body{
     --dark-slate: #495670;
     --light-navy: #112240;
     --lightest-navy: #233554;
+    --navy-shadow: rgba(2,12,27,0.7);
     --green-tint: rgba(100,255,218,0.1);
     --overlay: rgba(26, 255, 177, 0.5);
-    --animation-time: 0.10s
+    --animation-time: 0.10s;
+    --anchor-offset: -150px;
 }
 
 :focus-visible {
@@ -145,7 +148,10 @@ ul{
 }
 ul, li{
     list-style-position: outside;
-    padding-left: 10px; 
+    gap: 10px;
+}
+li.grid-item{
+    padding-left: 5px;
 }
 .grid-item::marker{
     content: "▹";

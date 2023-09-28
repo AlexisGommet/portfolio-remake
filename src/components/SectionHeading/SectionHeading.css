@@ -1,25 +1,32 @@
 .SectionHeading{
-   display: flex;
-   flex-direction: row; 
-   gap: 25px;
-   letter-spacing: 1.5px;
-   margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    letter-spacing: 1.5px;
+    margin-bottom: 50px;
+    align-items: center;
 }
 
 .heading-number{
     color: var(--green);
 }
+.heading-number::before {
+    counter-increment: section; /* increment the counter */
+    content: counter(section) "."; /* use the counter as content */
+}
 
 .heading-text{
     color: var(--lightest-slate);
 }
-.heading-text::after{
+.SectionHeading > a{
     position: relative;
-    display: inline-block;
-    content: "";
-    bottom: 30%;
-    margin-left: 25px;
+    top: var(--anchor-offset);
+    opacity: 0;
+    font-size: 0;
+}
+
+#heading-line{
     height: 1px;
-    width: 500px;
+    flex-grow: 1;
     background-color: var(--lightest-navy);
 }

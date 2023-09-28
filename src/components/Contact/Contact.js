@@ -9,7 +9,7 @@ function Contact() {
     const anchorRef = useRef('Contact');
 
     return (
-        <Section anchorRef={anchorRef} headingNumber={"4"} headingText={t('contact.title')} classProp={'contact'}>
+        <Section anchorRef={anchorRef} headingText={t('contact.title')} classProp={'contact'}>
             <div className="contact-flex">
                 <p>{t('contact.text')}</p>
                 <a href="mailto:alexis.gommet@outlook.fr" rel="noreferrer noopener"><button>{t('contact.button')}</button></a>

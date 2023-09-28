@@ -39,17 +39,16 @@
   "work": {
     "title": "Some projects I've done",
     "items": {
-      "1": {
+      "0": {
         "title": "US Media Archiver",
-        "text": "Archiver and comparator of CNN and FOX news headlines, screenshots taken every 6 hours with a cloud function using Puppeteer",
-        "flairs": "Firebase, Next, Puppeteer, Typescript"
+        "text": "Archiver and comparator of CNN and FOX news headlines, screenshots taken every 6 hours with a cloud function using Puppeteer"
       }
     }
   },
-  "credits": "Design credits goes to&nbsp;<a href='https://brittanychiang.com/' rel='noopener noreferrer' target='_blank'>Brittany Chiang</a>",
   "contact": {
     "title": "Contact me",
     "text": "Although I’m not currently looking for any new opportunities, my inbox is always open.",
     "button": "Send me a message"
-  }
+  },
+  "credits": "Design credits goes to&nbsp;<a href='https://brittanychiang.com/' rel='noopener noreferrer' target='_blank'>Brittany Chiang</a>"
 }

@@ -1,7 +1,18 @@
 import './Navbar.css';
 import logo from '../../assets/images/Logo_letter-removebg.png';
-import { useState, useEffect } from 'react';
+import {useEffect, useState} from 'react';
 import {useTranslation} from "react-i18next";
+
+function Anchor({selector, text, number}) {
+    return (
+        <a href={selector}>
+            <div className={`index-el anim${number}`}>
+                <div className='number'>{number}. </div>
+                {text}
+            </div>
+        </a>
+    )
+}
 
 function Navbar () {
 
@@ -51,13 +62,15 @@ function Navbar () {
     return(
         <header className={computedClassName}>
             <nav className="Navbar">
-                <a href='https://portfolio.alexisgommet.com/' id='anchor'><img className='logo anim0' src={logo} alt="Logo" /></a>
+                <a href='https://portfolio.alexisgommet.com/' id='anchor'><img className='logo anim0' src={logo} alt="Logo"/></a>
                 <div className='index'>
-                    <a href='#About'><div className='index-el anim1'><div className='number'>1. </div>{t('nav.about')}</div></a>
-                    <a href='#Experience'><div className='index-el anim2'><div className='number'>2. </div>{t('nav.experience')}</div></a>
-                    <a href='#Work'><div className='index-el anim3'><div className='number'>3. </div>{t('nav.work')}</div></a>
-                    <a href='#Contact'><div className='index-el anim4'><div className='number'>4. </div>{t('nav.contact')}</div></a>
-                    <a href={PdfContent} target="_blank" rel="noopener noreferrer"><button className='anim5'>{t('nav.resume')}</button></a>
+                    <Anchor selector="#About" number="1" text={t('nav.about')} />
+                    <Anchor selector="#Experience" number="2" text={t('nav.experience')} />
+                    <Anchor selector="#Work" number="3" text={t('nav.work')} />
+                    <Anchor selector="#Contact" number="4" text={t('nav.contact')} />
+                    <a href={PdfContent} target="_blank" rel="noopener noreferrer">
+                        <button className='anim5'>{t('nav.resume')}</button>
+                    </a>
                 </div>
             </nav>
         </header>

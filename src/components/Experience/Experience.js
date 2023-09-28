@@ -16,7 +16,7 @@ function Experience() {
     })     
 
     return (
-        <Section headingText={t('experience.title')} headingNumber={"2"} anchorRef={anchorRef} classProp={'Experience-container'}>
+        <Section headingText={t('experience.title')} anchorRef={anchorRef} classProp={'Experience-container'}>
             <div className="Experience">
                 <ul className="exp-list">
                     {experiences.map((item, index) =>

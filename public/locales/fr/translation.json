@@ -39,17 +39,16 @@
   "work": {
     "title": "Quelques projets que j'ai réalisés",
     "items": {
-      "1": {
-        "title": "Archive des médias américains",
-        "text": "Archive et comparatif de titres de nouvelles de CNN et FOX, captures d'écran prises toutes les 6 heures avec une fonction cloud utilisant Puppeteer",
-        "flairs": "Firebase, Next, Puppeteer, Typescript"
+      "0": {
+        "title": "Archive de médias américains",
+        "text": "Archive et comparatif de titres de nouvelles de CNN et FOX news, captures d'écran prises toutes les 6 heures avec une fonction cloud utilisant Puppeteer"
       }
     }
   },
-  "credits": "Crédits de conception vont à&nbsp;<a href='https://brittanychiang.com/' rel='noopener noreferrer' target='_blank'>Brittany Chiang</a>",
   "contact": {
     "title": "Contactez-moi",
     "text": "Bien que je ne recherche pas actuellement de nouvelles opportunités, ma boîte de réception est toujours ouverte.",
     "button": "Envoyez-moi un message"
-  }
+  },
+  "credits": "Crédits de conception vont à&nbsp;<a href='https://brittanychiang.com/' rel='noopener noreferrer' target='_blank'>Brittany Chiang</a>"
 }

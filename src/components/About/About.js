@@ -11,7 +11,7 @@ function About() {
     const technologies = ['Node', 'React', 'Vue', 'Laravel', 'Stripe', 'WebSockets', 'Typescript', 'Next', 'Puppeteer'];
 
     return (
-        <Section headingText={t('about.title')} headingNumber={"1"} anchorRef={anchorRef} link={Me}>
+        <Section headingText={t('about.title')} anchorRef={anchorRef} link={Me}>
             <div className="About">
                 <div className='about-text'>
                     <p>{t('about.text_1')}</p>
