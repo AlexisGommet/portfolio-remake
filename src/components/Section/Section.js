@@ -17,8 +17,8 @@ function Section({ headingText, anchorRef, link, classProp, wrapperClass, childr
                 wrapper={children => <div className={wrapperClass}>{children}</div>}
             >
                 {child_list &&
-                    child_list.map((el) =>
-                        <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce="true" duration="1.5">
+                    child_list.map((el, index) =>
+                        <AnimationOnScroll key={index} animateIn="animate__fadeInUp" animateOnce="true" duration="1.5">
                             {el}
                         </AnimationOnScroll>
                     )
