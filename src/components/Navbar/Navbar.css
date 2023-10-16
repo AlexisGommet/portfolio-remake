@@ -12,7 +12,7 @@
 
 .not-top{
     z-index: 1000;
-    box-shadow: 0 4px 2px -2px rgb(25, 30, 54);
+    box-shadow: 0 2px 2px -2px rgb(25, 30, 54);
 }
 
 .not-top > .Navbar{

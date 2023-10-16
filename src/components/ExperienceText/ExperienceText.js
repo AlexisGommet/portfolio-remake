@@ -1,5 +1,5 @@
 import './ExperienceText.css';
-import { Transition, SwitchTransition } from "react-transition-group";
+import {SwitchTransition, Transition} from "react-transition-group";
 import styled from "styled-components";
 import {useTranslation} from "react-i18next";
 
@@ -38,8 +38,8 @@ function ExperienceText({ selected }) {
                             <>
                                 <h3 style={{marginBottom: 0}}>{t(`experience.items.${selected}.title`)}
                                     <span className='green'> @&nbsp;
-                                        <a className='animated-anchor' href='https://www.kameobikes.com/' target='_blank' rel='noopener noreferrer'>
-                                            <div>Kameo Bikes</div>
+                                        <a className='animated-anchor' href={t(`experience.items.${selected}.link`)} target='_blank' rel='noopener noreferrer'>
+                                            <div>{t(`experience.items.${selected}.link_text`)}</div>
                                         </a>
                                     </span>
                                 </h3>

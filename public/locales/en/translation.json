@@ -9,29 +9,48 @@
     "resume": "Resume"
   },
   "intro": {
-    "name": "Hi, my name is",
-    "text": "I'm a computer science student in Angers, France. I like to build all things web-related. Recently, I contributed to the development of <a class='animated-anchor' href='https://www.kameobikes.com/' target='_blank' rel='noopener noreferrer'> <div class='green'>Kameo Bikes</div></a>'s ERP and internal tools."
+    "name": "Hello, my name is",
+    "text": "I have a digital engineering degree from ESAIP Angers. I like to build web-related things. Recently I contributed to the development of <a class='animated-anchor' href='https://www.carool.tech/' target='_blank' rel='noopener noreferrer'> <div class='green'>Carool</div></a>'s app and its internal tools."
   },
   "about": {
-    "title": "About Me",
-    "text_1": "Hello! My name is Alexis and I enjoy creating web related things. I already had introductions to programming going back to high school with classes about Python, HTML or Java,but my interest in web development started back in 2021 with an introduction to Javascript course with an entertaining teacher that lit my passion for web development.",
-    "text_2": "This summer I worked at <a class='animated-anchor' href='https://www.kameobikes.com/' target='_blank' rel='noopener noreferrer'> <div class='green'>Kameo Bikes</div></a>, building and refactoring the new version of their ERP app.",
-    "technologies": "Here are a few technologies I’ve been working with recently :"
+    "title": "About me",
+    "text_1": "Hello! My name is Alexis and I love creating web-related things. I started programming in high school with Python, HTML, or Java courses, but my interest in web development started in 2021 with an introductory Javascript course from an entertaining teacher who stimulated my passion for web development.",
+    "text_2": "I recently finished my end-of-studies internship at <a class='animated-anchor' href='https://us.ippon.tech/' target='_blank' rel='noopener noreferrer'> <div class='green'>Ippon Technologies</div></a>. My mission at <a class='animated-anchor' href='https://www.carool.tech/' target='_blank' rel='noopener noreferrer'> <div class='green'>Carool</div></a> led me to improve user experience and create exciting new features.",
+    "technologies": "Here are some technologies I have recently worked with:"
   },
   "experience": {
     "title": "Experience",
+    "item_titles": "Next...|Present|ESI|Kameo Bikes|Activ'Esaip",
     "items": {
       "0": {
         "title": "What next ? &#128064;"
       },
       "1": {
-        "title": "Web developper intern",
-        "date": "July - September 2022",
-        "bullet_points": "2 month internship|Integrated real time updates with Websockets|Various performance optimizations and bug fixes|Implemented a client chat feature with it's overview dashboard|Vue, Laravel"
+        "title": "Fullstack Developer",
+        "date": "September 2023 - Present",
+        "link": "https://us.ippon.tech/",
+        "link_text": "Ippon Technologies",
+        "bullet_points": "Permanent Fullstack Developer position"
       },
       "2": {
-        "title": "Web developper",
+        "title": "Fullstack developer intern",
+        "date": "March - August 2023",
+        "link": "https://us.ippon.tech/",
+        "link_text": "Ippon Technologies",
+        "bullet_points": "6 month internship|Integration of analytics API|Creation of end-to-end tests|Creation of API endpoints|Continuous improvement of the application"
+      },
+      "3": {
+        "title": "Web developer intern",
+        "date": "July - September 2022",
+        "link": "https://www.kameobikes.com/",
+        "link_text": "Kameo Bikes",
+        "bullet_points": "2 month internship|Integrated real time updates with Websockets|Various performance optimizations and bug fixes|Implemented a client chat feature with it's overview dashboard|Vue, Laravel"
+      },
+      "4": {
+        "title": "Web developer",
         "date": "February - June 2022",
+        "link": "https://www.kameobikes.com/",
+        "link_text": "Kameo Bikes",
         "bullet_points": "Service paid by the company to the school to fund parts of a student's curriculum|The company was opening it's new shop and needed a planning tool for the workshop to keep track of the work to be done and assigning it to different people|Vue, Laravel"
       }
     }
@@ -42,6 +61,14 @@
       "0": {
         "title": "US Media Archiver",
         "text": "Archiver and comparator of CNN and FOX news headlines, screenshots taken every 6 hours with a cloud function using Puppeteer"
+      },
+      "1": {
+        "title": "PokéPostie",
+        "text": "Website concept for a French company to serve as an intermediary for grading Pokemon cards in the US with payments powered by Stripe"
+      },
+      "2": {
+        "title": "Messaging app",
+        "text": "Meta-Messenger like type application with real-time updates"
       }
     }
   },

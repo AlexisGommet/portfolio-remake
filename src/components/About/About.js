@@ -8,7 +8,7 @@ function About() {
 
     const anchorRef = useRef('About');
     const { t } = useTranslation();
-    const technologies = ['Node', 'React', 'Vue', 'Laravel', 'Stripe', 'WebSockets', 'Typescript', 'Next', 'Puppeteer'];
+    const technologies = ['Node', 'React', 'Vue', 'Laravel', 'Stripe', 'WebSockets', 'Typescript', 'Next', 'Puppeteer', 'Angular', 'RxJS', 'Java Spring'];
 
     return (
         <Section headingText={t('about.title')} anchorRef={anchorRef} link={Me}>

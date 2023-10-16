@@ -5,6 +5,8 @@ import './Work.css';
 import {useTranslation} from "react-i18next";
 import Section from "../Section/Section";
 import Archiver from '../../assets/images/screen_archiver.png';
+import PokePostie from '../../assets/images/PokePostie.png';
+import Messenger from '../../assets/images/Messenger.png';
 
 function Work() {
 
@@ -15,9 +17,25 @@ function Work() {
         {
             flairs: ['Firebase', 'Next', 'Puppeteer', 'Typescript'],
             links: {
-                github: 'AlexisGommet/us-media-archive',
+                github: 'us-media-archive',
                 website: 'us-media-archive.alexisgommet.com/',
                 picture: Archiver
+            }
+        },
+        {
+            flairs: ['Firebase', 'Vue', 'Node', 'Stripe'],
+            links: {
+                github: 'pokemon_card_shipping',
+                website: 'pokemoncardshipping.alexisgommet.com/',
+                picture: PokePostie
+            }
+        },
+        {
+            flairs: ['Firebase', 'React'],
+            links: {
+                github: 'messaging_app',
+                website: 'messaging.alexisgommet.com/',
+                picture: Messenger
             }
         }
     ];
@@ -39,7 +57,7 @@ function Work() {
                                 )}
                             </ul>
                             <div className='project-links'>
-                                <a href={`https://github.com/${el.links.website}`}  target='_blank' rel='noopener noreferrer'><GitHub /></a>
+                                <a href={`https://github.com/AlexisGommet/${el.links.github}`}  target='_blank' rel='noopener noreferrer'><GitHub /></a>
                                 <a href={`https://${el.links.website}`}  target='_blank' rel='noopener noreferrer'><ExternalLink /></a>
                             </div>
                         </div>
