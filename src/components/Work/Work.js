@@ -41,29 +41,26 @@ function Work() {
     ];
 
     return (
-        <Section headingText={t('work.title')} anchorRef={anchorRef} link={Archiver} classProp={'Work'}>
-            <div className='projects'>
-                {items.map((el, index) =>
-                    <div className='project' key={index}>
-                        <a href={`https://${el.links.website}`} target='_blank' rel='noopener noreferrer'>
-                            <div className='project_picture' style={{backgroundImage: `url(${el.links.picture})`}}></div>
-                        </a>
-                        <div className='project-column'>
-                            <h2 className='light-slate'>{t(`work.items.${index}.title`)}</h2>
-                            <p>{t(`work.items.${index}.text`)}</p>
-                            <ul className='project-flairs'>
-                                {el.flairs.map((item, index) =>
-                                    <li className='light-slate' key={index}>{item}</li>
-                                )}
-                            </ul>
-                            <div className='project-links'>
-                                <a href={`https://github.com/AlexisGommet/${el.links.github}`}  target='_blank' rel='noopener noreferrer'><GitHub /></a>
-                                <a href={`https://${el.links.website}`}  target='_blank' rel='noopener noreferrer'><ExternalLink /></a>
-                            </div>
+        <Section headingText={t('work.title')} anchorRef={anchorRef} link={Archiver} classProp={'Work'} wrapperClass={'projects'} child_list={items.map((el, index) =>
+                <div className='project' key={index}>
+                    <a href={`https://${el.links.website}`} target='_blank' rel='noopener noreferrer'>
+                        <div className='project_picture' style={{backgroundImage: `url(${el.links.picture})`}}></div>
+                    </a>
+                    <div className='project-column'>
+                        <h2 className='light-slate'>{t(`work.items.${index}.title`)}</h2>
+                        <p>{t(`work.items.${index}.text`)}</p>
+                        <ul className='project-flairs'>
+                            {el.flairs.map((item, index) =>
+                                <li className='light-slate' key={index}>{item}</li>
+                            )}
+                        </ul>
+                        <div className='project-links'>
+                            <a href={`https://github.com/AlexisGommet/${el.links.github}`}  target='_blank' rel='noopener noreferrer'><GitHub /></a>
+                            <a href={`https://${el.links.website}`}  target='_blank' rel='noopener noreferrer'><ExternalLink /></a>
                         </div>
                     </div>
-                )}
-            </div>
+                </div>
+            )}>
         </Section>
     );
 }

@@ -9,15 +9,15 @@
     flex-direction: column;  
 }
 
-.project:nth-child(odd){
+.projects > div:nth-of-type(odd) > .project{
     display: flex;
     flex-direction: row;
 }
-.project:nth-child(even){
+.projects > div:nth-of-type(even) > .project{
     display: flex;
     flex-direction: row-reverse;
 }
-.project:not(:last-child) {
+.projects > div:not(:last-child)  > .project {
     margin-bottom: 100px;
 }
 
@@ -46,13 +46,13 @@
     opacity: 0;
 }
 
-.project:nth-child(even) > .project-column{
+.projects > div:nth-of-type(even) > .project > .project-column{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 50%;
 }
-.project:nth-child(odd) > .project-column{
+.projects > div:nth-of-type(odd) > .project > .project-column{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
