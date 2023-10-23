@@ -47,7 +47,8 @@ function Work() {
                         <div className='project_picture' style={{backgroundImage: `url(${el.links.picture})`}}></div>
                     </a>
                     <div className='project-column'>
-                        <h2 className='light-slate'>{t(`work.items.${index}.title`)}</h2>
+                        <span className='green'>{t('work.featured')}</span>
+                            <h2 className='light-slate'>{t(`work.items.${index}.title`)}</h2>
                         <p>{t(`work.items.${index}.text`)}</p>
                         <ul className='project-flairs'>
                             {el.flairs.map((item, index) =>

@@ -57,6 +57,7 @@
   },
   "work": {
     "title": "Quelques projets que j'ai réalisés",
+    "featured": "Projet phare",
     "items": {
       "0": {
         "title": "Archive de médias américains",

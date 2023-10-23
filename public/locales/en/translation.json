@@ -57,6 +57,7 @@
   },
   "work": {
     "title": "Some projects I've done",
+    "featured": "Featured project",
     "items": {
       "0": {
         "title": "US Media Archiver",

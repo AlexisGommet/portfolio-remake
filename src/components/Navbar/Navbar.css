@@ -83,6 +83,16 @@ header{
     background-color: var(--green-tint);
 }
 
+.burger-menu {
+    display: none;
+}
+
+.slide-right{
+    left: 25vh;
+    box-shadow: -2px 2px 2px -2px rgb(25, 30, 54);
+    z-index: 1000;
+}
+
 .anim0{
     animation: fadeIn calc(var(--animation-time) * 3) 0.30s ease-in-out forwards, animToBottom calc(var(--animation-time) * 3) 0.30s ease-in-out forwards;
 }
@@ -120,5 +130,47 @@ header{
     }
     to {
         transform: translate(0px, 0px);
+    }
+}
+
+@media (max-width: 700px) {
+    .burger-menu {
+        display: inline;
+        position: absolute;
+        top: 0;
+        right: -10vh;
+        margin: 20px;
+    }
+    .Navbar{
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 10%;
+        height: 100%;
+        padding: 20px;
+        margin: 10px;
+    }
+    #anchor{
+        margin: 0 auto;
+    }
+    .index{
+        flex-direction: column;
+        align-items: center;
+        gap: 10vh;
+        width: 100%;
+    }
+    header{
+        /*réduire les tailles des images, sinon problèmes avec viewport, remettre ça en sticky si besoin ou possible*/
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 25vh;
+        height: 100vh;
+        z-index: 1000;
+        transform: translate(-25vh, 0);
+        backdrop-filter: blur(10px);
+    }
+    .decoupled{
+        top: 0;
     }
 }

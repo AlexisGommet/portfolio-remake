@@ -12,6 +12,11 @@
 .Links > a{
     cursor: pointer;
 }
+@media (max-width: 1200px) {
+    .Links {
+        display: none;
+    }
+}
 
 .feather{
     transition: all 0.25s ease-in-out;

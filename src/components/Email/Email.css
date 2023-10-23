@@ -10,6 +10,11 @@
     z-index: 10;
     animation: fadeIn calc(var(--animation-time) * 4) 2.55s ease-in-out forwards;
 }
+@media (max-width: 1200px) {
+    .Email {
+        display: none;
+    }
+}
 
 #mail{
     color: var(--light-slate);

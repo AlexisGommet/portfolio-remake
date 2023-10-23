@@ -6,7 +6,7 @@ function SectionHeading({ text, anchorRef }) {
         <h1 className="SectionHeading">
             <span className='heading-number'></span>
             <div className='heading-text'>{text}</div>
-            <span id="heading-line"></span>
+            {/*<span id="heading-line"></span>*/}
             <a id={anchorRef.current} href={`#${anchorRef.current}`}>{text}</a>
         </h1>  
     );

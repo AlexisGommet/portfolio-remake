@@ -5,6 +5,7 @@
     letter-spacing: 2px;
     line-height: 30px;
     color: var(--slate);
+    margin: 0 25px;
 }
 
 .contact button{

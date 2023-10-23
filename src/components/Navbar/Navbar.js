@@ -2,6 +2,7 @@ import './Navbar.css';
 import logo from '../../assets/images/Logo_letter-removebg.png';
 import {useEffect, useState} from 'react';
 import {useTranslation} from "react-i18next";
+import { ReactComponent as BurgerMenuIcon } from '../../assets/icons/burger-menu.svg';
 
 function Anchor({selector, text, number}) {
     return (
@@ -18,28 +19,35 @@ function Navbar () {
 
     const [computedClassName, setComputedClassName] = useState('');
     const [PdfContent, setPdfContent] = useState('');
+    const [menuIsOpen, setMenuState] = useState(false);
     const { t } = useTranslation();
+
+    useEffect(() => {
+        if (!menuIsOpen)
+            setComputedClassName((value) => value.replaceAll(' slide-right', ''));
+        else
+            setComputedClassName((value) => value + ' slide-right');
+    }, [menuIsOpen]);
 
     useEffect(() => {
 
         let lastScrollTop = 0;
 
         function scrollCheck(){
+            if(window.innerWidth >= 700){
+                const st = document.documentElement.scrollTop;
+                let class_name = '';
 
-            const st = document.documentElement.scrollTop;
-            let class_name = '';
+                if(st !== 0)
+                    class_name += 'not-top';
 
-            if(st !== 0){
-                class_name += 'not-top';
+                if (lastScrollTop < st)
+                    class_name += ' decoupled';
+
+                setComputedClassName(class_name);
+
+                lastScrollTop = st <= 0 ? 0 : st;
             }
-
-            if (lastScrollTop < st){
-                class_name += ' decoupled';
-            }
-
-            setComputedClassName(class_name);
-
-            lastScrollTop = st <= 0 ? 0 : st;
         }
 
         window.addEventListener("scroll", scrollCheck);
@@ -61,6 +69,7 @@ function Navbar () {
 
     return(
         <header className={computedClassName}>
+            <BurgerMenuIcon className="burger-menu" onClick={() => setMenuState((value) => !value)} />
             <nav className="Navbar">
                 <a href='https://portfolio.alexisgommet.com/' id='anchor'><img className='logo anim0' src={logo} alt="Logo"/></a>
                 <div className='index'>

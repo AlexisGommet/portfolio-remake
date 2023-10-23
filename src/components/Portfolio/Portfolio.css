@@ -3,9 +3,9 @@
 #content{
     display: flex;
     flex-direction: column;
-    gap: 500px;
+    gap: 600px;
     margin: 300px auto;
-    width: 55%;
+    width: 100%;
 }
 
 #skip-content{
@@ -75,5 +75,16 @@ footer:hover > a{
     }
     100% {
         opacity: 1;
+    }
+}
+
+@media (max-width: 700px) {
+    #content{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 600px;
+        margin: 300px auto;
+        width: 100%;
     }
 }

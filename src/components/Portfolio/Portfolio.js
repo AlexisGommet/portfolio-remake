@@ -27,7 +27,7 @@ function Portfolio() {
             <Email />
             <main id='content'>
                 <Intro />
-                <h1 className='wip'>{t('wip')}</h1>
+                {/*<h1 className='wip'>{t('wip')}</h1>*/}
                 <div className='center'>
                     <About />
                     <Experience />

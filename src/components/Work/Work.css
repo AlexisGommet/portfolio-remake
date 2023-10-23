@@ -2,6 +2,7 @@
     font-weight: 600;
     letter-spacing: 2px;
     line-height: 30px;
+    margin: 0 25px;
 }
 
 .projects {
@@ -24,11 +25,12 @@
 .project_picture{
     position: relative;
     background-size: cover;
+    object-fit: cover;
     width: 550px;
     height: 400px;
     border-radius: 10px;
-    transition: all 0.25s ease-in-out;  
-    
+    box-shadow: 0 10px 30px -15px var(--navy-shadow);
+    transition: all 0.25s ease-in-out;
 }
 .project_picture::after {
     content: "";
@@ -50,7 +52,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 50%;
+    width: 500px;
 }
 .projects > div:nth-of-type(odd) > .project > .project-column{
     display: flex;
@@ -58,7 +60,7 @@
     align-items: flex-end;
     justify-content: space-between;
     text-align: end;
-    width: 50%;
+    width: 500px;
 }
 
 .project-column > h2 {
@@ -92,4 +94,62 @@
     display: flex;
     flex-direction: row;
     gap: 25px;
+}
+
+@media (max-width: 1200px) {
+    .projects > div:nth-of-type(even) > .project > .project-column{
+        width: 400px;
+    }
+    .projects > div:nth-of-type(odd) > .project > .project-column{
+        width: 400px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .projects > div:nth-of-type(even) > .project > .project-column{
+        width: 300px;
+    }
+    .projects > div:nth-of-type(odd) > .project > .project-column{
+        width: 300px;
+    }
+}
+
+@media (max-width: 900px) {
+    .project{
+        margin: 0 auto;
+    }
+    .projects > div:nth-of-type(even), .projects > div:nth-of-type(odd){
+        position: relative;
+    }
+    .projects > div:nth-of-type(even) > .project > .project-column, .projects > div:nth-of-type(odd) > .project > .project-column{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        text-align: start;
+        padding: 0 25px;
+        width: 90%;
+        height: 100%;
+        margin: auto 0;
+        top: 0;
+        left: 0;
+    }
+    .project-column > p {
+        box-shadow: none;
+        position: relative;
+        z-index: 0;
+        padding: 0;
+        width: auto;
+        border-radius: 0;
+        background-color: transparent;
+    }
+    .project_picture::after {
+        background: var(--light-navy);
+    }
+    .project_picture:hover::after {}
+    .projects > div:not(:last-child)  > .project  > .project-column {
+        height: calc(100% - 100px);
+        margin-bottom: 100px;
+    }
 }

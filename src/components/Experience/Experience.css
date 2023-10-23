@@ -35,4 +35,22 @@
 
 .Experience-container{
     height: 420px;
+    width: 800px;
+    margin: 0 25px;
+}
+
+@media (max-width: 900px) {
+    .Experience-container{
+        width: 700px;
+    }
+}
+@media (max-width: 800px) {
+    .Experience-container{
+        width: 600px;
+    }
+}
+@media (max-width: 700px) {
+    .Experience-container{
+        width: 500px;
+    }
 }
