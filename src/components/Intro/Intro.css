@@ -68,4 +68,8 @@
     .intro-text {
         width: 90%;
     }
+    .Intro {
+        margin-left: 8%;
+        transform: translate(0px, -50px);
+    }
 }
