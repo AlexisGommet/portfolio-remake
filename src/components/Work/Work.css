@@ -112,9 +112,6 @@
     .projects > div:nth-of-type(odd) > .project > .project-column{
         width: 300px;
     }
-    .projects > div:nth-of-type(even) > .project, .projects > div:nth-of-type(odd) > .project {
-        flex-direction: row;
-    }
 }
 
 @media (max-width: 900px) {
@@ -123,6 +120,9 @@
     }
     .projects > div:nth-of-type(even), .projects > div:nth-of-type(odd){
         position: relative;
+    }
+    .projects > div:nth-of-type(even) > .project, .projects > div:nth-of-type(odd) > .project {
+        flex-direction: row;
     }
     .projects > div:nth-of-type(even) > .project > .project-column, .projects > div:nth-of-type(odd) > .project > .project-column{
         display: flex;
