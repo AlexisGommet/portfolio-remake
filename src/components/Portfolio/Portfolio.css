@@ -57,18 +57,6 @@ footer:hover > a{
     color: var(--green);
 }
 
-/* remove when finished */
-
-.wip{
-    color: var(--green);
-    position: absolute;
-    top: 90vh;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    animation: fadeIn calc(var(--animation-time) * 4) 3s ease-in-out forwards;
-}
-
 @keyframes fadeIn {
     0% {
         opacity: 0;

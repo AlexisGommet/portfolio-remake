@@ -41,16 +41,7 @@
 
 @media (max-width: 900px) {
     .Experience-container{
-        width: 700px;
-    }
-}
-@media (max-width: 800px) {
-    .Experience-container{
-        width: 600px;
-    }
-}
-@media (max-width: 700px) {
-    .Experience-container{
-        width: 500px;
+        width: 90%;
+        margin: 0 10px;
     }
 }

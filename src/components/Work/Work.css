@@ -112,6 +112,9 @@
     .projects > div:nth-of-type(odd) > .project > .project-column{
         width: 300px;
     }
+    .projects > div:nth-of-type(even) > .project, .projects > div:nth-of-type(odd) > .project {
+        flex-direction: row;
+    }
 }
 
 @media (max-width: 900px) {
@@ -129,7 +132,7 @@
         justify-content: space-evenly;
         text-align: start;
         padding: 0 25px;
-        width: 90%;
+        width: 80%;
         height: 100%;
         margin: auto 0;
         top: 0;
@@ -151,5 +154,63 @@
     .projects > div:not(:last-child)  > .project  > .project-column {
         height: calc(100% - 100px);
         margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 600px) {
+    .project_picture{
+        width: 500px;
+        height: 375px;
+    }
+}
+
+@media (max-width: 550px) {
+    .project_picture{
+        width: 400px;
+        height: 300px;
+    }
+    .projects > div  > .project  > .project-column * {
+        padding: 0;
+        margin: 0;
+    }
+    .projects > div  > .project  > .project-column > span {
+        margin-bottom: 10px;
+    }
+    .Work {
+        margin: 0 10px;
+    }
+    .Work > .projects {
+        line-height: 10px;
+    }
+    .project-column > h2 {
+        font-size: large;
+    }
+    .projects > div:not(:last-child)  > .project  > .project-column {
+        height: calc(100% - 100px);
+        width: 350px;
+        margin-bottom: 100px;
+    }
+    .projects > div:last-child  > .project  > .project-column {
+        height: 100%;
+        width: 350px;
+    }
+}
+
+@media (max-width: 425px) {
+    .project_picture{
+        width: 350px;
+        height: 275px;
+    }
+    .Work > .projects {
+        font-size: 12px;
+    }
+    .projects > div:not(:last-child)  > .project  > .project-column {
+        height: calc(100% - 100px);
+        width: 300px;
+        margin-bottom: 100px;
+    }
+    .projects > div:last-child  > .project  > .project-column {
+        height: 100%;
+        width: 300px;
     }
 }

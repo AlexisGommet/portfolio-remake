@@ -11,8 +11,8 @@
     color: var(--green);
 }
 .heading-number::before {
-    counter-increment: section; /* increment the counter */
-    content: counter(section) "."; /* use the counter as content */
+    counter-increment: section;
+    content: counter(section) ".";
 }
 
 .heading-text{

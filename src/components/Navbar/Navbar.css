@@ -88,7 +88,7 @@ header{
 }
 
 .slide-right{
-    left: 25vh;
+    left: 26vh;
     box-shadow: -2px 2px 2px -2px rgb(25, 30, 54);
     z-index: 1000;
 }
@@ -160,14 +160,13 @@ header{
         width: 100%;
     }
     header{
-        /*réduire les tailles des images, sinon problèmes avec viewport, remettre ça en sticky si besoin ou possible*/
         position: fixed;
         top: 0;
         left: 0;
-        width: 25vh;
+        width: 26vh;
         height: 100vh;
         z-index: 1000;
-        transform: translate(-25vh, 0);
+        transform: translate(-26vh, 0);
         backdrop-filter: blur(10px);
     }
     .decoupled{

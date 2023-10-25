@@ -9,12 +9,6 @@ import Work from '../Work/Work.js';
 import {useTranslation} from "react-i18next";
 import Contact from "../Contact/Contact";
 
-// TODO:
-// Add new experiences
-// Finish highlighted projects
-// Add other projects
-// Responsive
-
 function Portfolio() {
 
     const { t } = useTranslation();
@@ -27,7 +21,6 @@ function Portfolio() {
             <Email />
             <main id='content'>
                 <Intro />
-                {/*<h1 className='wip'>{t('wip')}</h1>*/}
                 <div className='center'>
                     <About />
                     <Experience />
