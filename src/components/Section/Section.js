@@ -29,8 +29,6 @@ function Section({ headingText, anchorRef, link, classProp, wrapperClass, childr
                     </AnimationOnScroll>
                 }
             </ConditionalWrapper>
-            
-
         </div>
     );
 }

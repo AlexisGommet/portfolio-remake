@@ -7,6 +7,7 @@ import Section from "../Section/Section";
 import Archiver from '../../assets/images/screen_archiver.png';
 import PokePostie from '../../assets/images/PokePostie.png';
 import Messenger from '../../assets/images/Messenger.png';
+import Badge from '../../assets/images/aws-certified-developer-associate.png';
 
 function Work() {
 
@@ -14,6 +15,17 @@ function Work() {
     const { t } = useTranslation();
 
     const items = [
+        {
+            flairs: ['Certification', 'AWS'],
+            size: {
+                width: 400,
+                height: 400
+            },
+            links: {
+                picture: Badge,
+                website: 'www.credly.com/badges/67a0505e-e153-4ec6-90fc-8c073c99b00f/linked_in_profile',
+            }
+        },
         {
             flairs: ['Firebase', 'Next', 'Puppeteer', 'Typescript'],
             links: {
@@ -44,7 +56,14 @@ function Work() {
         <Section headingText={t('work.title')} anchorRef={anchorRef} link={Archiver} classProp={'Work'} wrapperClass={'projects'} child_list={items.map((el, index) =>
                 <div className='project' key={index}>
                     <a href={`https://${el.links.website}`} target='_blank' rel='noopener noreferrer'>
-                        <div className='project_picture' style={{backgroundImage: `url(${el.links.picture})`}}></div>
+                        {el.size && <div className='project_picture' style={{
+                            backgroundImage: `url(${el.links.picture})`,
+                            width: `400px`,
+                            height: `400px`
+                        }}></div>}
+                        {!el.size && <div className='project_picture' style={{
+                            backgroundImage: `url(${el.links.picture})`
+                        }}></div>}
                     </a>
                     <div className='project-column'>
                         <span className='green'>{t('work.featured')}</span>
@@ -55,13 +74,17 @@ function Work() {
                                 <li className='light-slate' key={index}>{item}</li>
                             )}
                         </ul>
-                        <div className='project-links'>
-                            <a href={`https://github.com/AlexisGommet/${el.links.github}`}  target='_blank' rel='noopener noreferrer'><GitHub /></a>
-                            <a href={`https://${el.links.website}`}  target='_blank' rel='noopener noreferrer'><ExternalLink /></a>
-                        </div>
+                        {el.links.github && el.links.website &&
+                            <div className='project-links'>
+                                <a href={`https://github.com/AlexisGommet/${el.links.github}`} target='_blank'
+                                   rel='noopener noreferrer'><GitHub/></a>
+                                <a href={`https://${el.links.website}`} target='_blank'
+                                   rel='noopener noreferrer'><ExternalLink/></a>
+                            </div>
+                        }
                     </div>
                 </div>
-            )}>
+        )}>
         </Section>
     );
 }

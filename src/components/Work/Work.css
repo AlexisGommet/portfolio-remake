@@ -7,7 +7,7 @@
 
 .projects {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
 }
 
 .projects > div:nth-of-type(odd) > .project{
@@ -73,7 +73,7 @@
     position: relative;
     z-index: 2;
     padding: 25px;
-    width: 115%;
+    width: 100%;
     border-radius: 10px;
     background-color: var(--light-navy);
     color: var(--light-slate);

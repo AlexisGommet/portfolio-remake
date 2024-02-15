@@ -56,18 +56,22 @@
     }
   },
   "work": {
-    "title": "Some projects I've done",
-    "featured": "Featured project",
+    "title": "Some things I've done",
+    "featured": "Featured item",
     "items": {
       "0": {
+        "title": "AWS Certified Developer Associate",
+        "text": "AWS Developer Associate certification, valid trough 14/02/27"
+      },
+      "1": {
         "title": "US Media Archiver",
         "text": "Archiver and comparator of CNN and FOX news headlines, screenshots taken every 6 hours with a cloud function using Puppeteer"
       },
-      "1": {
+      "2": {
         "title": "PokéPostie",
         "text": "Website concept for a French company to serve as an intermediary for grading Pokemon cards in the US with payments powered by Stripe"
       },
-      "2": {
+      "3": {
         "title": "Messaging app",
         "text": "Meta-Messenger like type application with real-time updates"
       }
