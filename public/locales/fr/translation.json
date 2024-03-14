@@ -60,18 +60,22 @@
     "featured": "Projet phare",
     "items": {
       "0": {
+        "title": "AWS Certified Solutions Architect Associate",
+        "text": "Certification AWS Solutions Architect Associate, valable jusqu’au 01/03/27"
+      },
+      "1": {
         "title": "AWS Certified Developer Associate",
         "text": "Certification AWS Developer Associate, valable jusqu’au 14/02/27"
       },
-      "1": {
+      "2": {
         "title": "Archive de médias américains",
         "text": "Archive et comparatif de titres de nouvelles de CNN et FOX news, captures d'écran prises toutes les 6 heures avec une fonction cloud utilisant Puppeteer"
       },
-      "2": {
+      "3": {
         "title": "PokéPostie",
         "text": "Concept d'entreprise française servant d'intermédiaire pour l'évaluation de cartes Pokemon aux États-Unis avec des paiements effectués par Stripe"
       },
-      "3": {
+      "4": {
         "title": "Application de messagerie",
         "text": "Application de messagerie type Meta-Messenger avec des mises à jour en temps réel"
       }

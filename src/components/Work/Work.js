@@ -7,7 +7,8 @@ import Section from "../Section/Section";
 import Archiver from '../../assets/images/screen_archiver.png';
 import PokePostie from '../../assets/images/PokePostie.png';
 import Messenger from '../../assets/images/Messenger.png';
-import Badge from '../../assets/images/aws-certified-developer-associate.png';
+import Badge_developer from '../../assets/images/aws-certified-developer-associate.png';
+import Badge_architect from '../../assets/images/aws-certified-solutions-architect-associate.png';
 
 function Work() {
 
@@ -22,8 +23,19 @@ function Work() {
                 height: 400
             },
             links: {
-                picture: Badge,
-                website: 'www.credly.com/badges/67a0505e-e153-4ec6-90fc-8c073c99b00f/linked_in_profile',
+                picture: Badge_architect,
+                website: 'www.credly.com/badges/bb86d4e7-d04c-4aea-96f4-aa7311204746',
+            }
+        },
+        {
+            flairs: ['Certification', 'AWS'],
+            size: {
+                width: 400,
+                height: 400
+            },
+            links: {
+                picture: Badge_developer,
+                website: 'www.credly.com/badges/67a0505e-e153-4ec6-90fc-8c073c99b00f',
             }
         },
         {

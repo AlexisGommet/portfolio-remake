@@ -60,18 +60,22 @@
     "featured": "Featured item",
     "items": {
       "0": {
+        "title": "AWS Certified Solutions Architect Associate",
+        "text": "AWS Solutions Architect Associate certification, valid trough 01/03/27"
+      },
+      "1": {
         "title": "AWS Certified Developer Associate",
         "text": "AWS Developer Associate certification, valid trough 14/02/27"
       },
-      "1": {
+      "2": {
         "title": "US Media Archiver",
         "text": "Archiver and comparator of CNN and FOX news headlines, screenshots taken every 6 hours with a cloud function using Puppeteer"
       },
-      "2": {
+      "3": {
         "title": "PokéPostie",
         "text": "Website concept for a French company to serve as an intermediary for grading Pokemon cards in the US with payments powered by Stripe"
       },
-      "3": {
+      "4": {
         "title": "Messaging app",
         "text": "Meta-Messenger like type application with real-time updates"
       }
