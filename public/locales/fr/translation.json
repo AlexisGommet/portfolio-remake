@@ -21,17 +21,17 @@
   },
   "experience": {
     "title": "Expérience",
-    "item_titles": "La suite...|Présent|PFE|Kameo Bikes|Activ'Esaip",
+    "item_titles": "La suite...|Ippon|PFE|Kameo Bikes|Activ'Esaip",
     "items": {
       "0": {
         "title": "Et ensuite ? &#128064;"
       },
       "1": {
         "title": "Développeur Fullstack",
-        "date": "Septembre 2023 - Présent",
+        "date": "Septembre 2023 - Juin 2024",
         "link": "https://fr.ippon.tech/",
         "link_text": "Ippon Technologies",
-        "bullet_points": "CDI Développeur Fullstack"
+        "bullet_points": "CDI Développeur Fullstack|Java Spring|Angular|AWS"
       },
       "2": {
         "title": "Stagiaire développeur Fullstack",

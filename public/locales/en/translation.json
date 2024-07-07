@@ -21,17 +21,17 @@
   },
   "experience": {
     "title": "Experience",
-    "item_titles": "Next...|Present|ESI|Kameo Bikes|Activ'Esaip",
+    "item_titles": "Next...|Ippon|ESI|Kameo Bikes|Activ'Esaip",
     "items": {
       "0": {
         "title": "What next ? &#128064;"
       },
       "1": {
         "title": "Fullstack Developer",
-        "date": "September 2023 - Present",
+        "date": "September 2023 - June 2024",
         "link": "https://us.ippon.tech/",
         "link_text": "Ippon Technologies",
-        "bullet_points": "Permanent Fullstack Developer position"
+        "bullet_points": "Permanent Fullstack Developer position|Java Spring|Angular|AWS"
       },
       "2": {
         "title": "Fullstack developer intern",
