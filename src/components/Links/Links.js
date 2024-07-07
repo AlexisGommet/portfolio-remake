@@ -8,7 +8,7 @@ function Links () {
         <div className='Links'>
             <a href='https://github.com/AlexisGommet' target='_blank' rel='noopener noreferrer'><GitHub /></a>
             <a href='https://gitlab.com/AlexisGommet' target='_blank' rel='noopener noreferrer'><GitLab /></a>
-            <a href='https://www.linkedin.com/in/alexis-gommet-b1377a161/' target='_blank' rel='noopener noreferrer'><LinkedIn /></a>
+            <a href='https://www.linkedin.com/in/alexis-gommet' target='_blank' rel='noopener noreferrer'><LinkedIn /></a>
         </div>
     );
 }
