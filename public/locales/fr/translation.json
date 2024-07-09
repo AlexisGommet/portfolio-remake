@@ -11,13 +11,13 @@
   },
   "intro": {
     "name": "Salut, je m'appelle",
-    "text": "Je suis diplômé Ingénieur du numérique de l'ESAIP Angers. J'aime construire des choses liées au web. Récemment, j'ai contribué au développement de l'application de <a class='animated-anchor' href='https://www.carool.tech/' target='_blank' rel='noopener noreferrer'> <div class='green'>Carool</div></a> et de ses outils internes."
+    "text": "Je suis diplômé Ingénieur du numérique de l'ESAIP Angers. J'aime l'automatisation et construire des choses liées au web. Récemment, j'ai pu développer mes compétences en cloud computing en obtenant deux certifications AWS."
   },
   "about": {
     "title": "A propos de moi",
-    "text_1": "Bonjour! Je m'appelle Alexis et j'aime créer des choses liées au web. J'ai été initié à la programmation depuis le lycée avec des cours sur Python, HTML ou Java, mais mon intérêt pour le développement web a commencé en 2021 avec un cours d'introduction à Javascript avec un professeur divertissant qui a éveillé ma passion pour le développement web.",
-    "text_2": "J'ai récemment finit mon stage de fin d'études chez <a class='animated-anchor' href='https://fr.ippon.tech/' target='_blank' rel='noopener noreferrer'> <div class='green'>Ippon Technologies</div></a>. Ma mission chez <a class='animated-anchor' href='https://www.carool.tech/' target='_blank' rel='noopener noreferrer'> <div class='green'>Carool</div></a> m'a amené a améliorer l'expérience utilisateur et créer de nouvelles fonctionnalités passionnantes.",
-    "technologies": "Voici quelques technologies avec lesquelles j'ai récemment travaillé :"
+    "text_1": "Bonjour! Je m'appelle Alexis et j'aime créer des choses liées au web. J'ai été initié à la programmation depuis le lycée avec des cours sur Python, HTML ou Java, mais mon intérêt pour le développement web a commencé en 2021 avec un cours d'introduction à Javascript avec un professeur passionné qui a éveillé ma passion pour le développement web.",
+    "text_2": "J'ai récemment obtenu deux certifications AWS. Mon parcours pour obtenir ces certifications m'a permis de découvrir en moi une curiosité pour le cloud que j'ignorais. J'espère maintenant pouvoir trouver des opportunités qui me permettront d'appliquer ces connaissances nouvellement acquises.",
+    "technologies": "Voici quelques technologies avec lesquelles j'ai travaillé :"
   },
   "experience": {
     "title": "Expérience",

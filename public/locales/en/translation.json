@@ -11,13 +11,13 @@
   },
   "intro": {
     "name": "Hello, my name is",
-    "text": "I have a digital engineering degree from ESAIP Angers. I like to build web-related things. Recently I contributed to the development of <a class='animated-anchor' href='https://www.carool.tech/' target='_blank' rel='noopener noreferrer'> <div class='green'>Carool</div></a>'s app and its internal tools."
+    "text": "I have a digital engineering degree from ESAIP Angers. I like automation and building web-related things. Recently, I was able to develop my cloud computing skills by obtaining two AWS certifications."
   },
   "about": {
     "title": "About me",
-    "text_1": "Hello! My name is Alexis and I love creating web-related things. I started programming in high school with Python, HTML, or Java courses, but my interest in web development started in 2021 with an introductory Javascript course from an entertaining teacher who stimulated my passion for web development.",
-    "text_2": "I recently finished my end-of-studies internship at <a class='animated-anchor' href='https://us.ippon.tech/' target='_blank' rel='noopener noreferrer'> <div class='green'>Ippon Technologies</div></a>. My mission at <a class='animated-anchor' href='https://www.carool.tech/' target='_blank' rel='noopener noreferrer'> <div class='green'>Carool</div></a> led me to improve user experience and create exciting new features.",
-    "technologies": "Here are some technologies I have recently worked with:"
+    "text_1": "Hello! My name is Alexis and I love creating web-related things. I started programming in high school with Python, HTML, or Java courses, but my interest in web development started in 2021 with an introductory Javascript course from a passionate teacher who stimulated my passion for web development.",
+    "text_2": "I recently completed two AWS certifications. My journey to achieve these certifications allowed me to discover in me a curiosity for the cloud that I did not know about. I now hope to find opportunities to apply this newly acquired knowledge.",
+    "technologies": "Here are some technologies I have worked with :"
   },
   "experience": {
     "title": "Experience",
